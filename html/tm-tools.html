@@ -1,0 +1,369 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>KentLogic - Home</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+    <link rel="icon" href="../images/lara_rounded.png"/>
+
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css"/>
+
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
+
+  <link rel="stylesheet" href="../bootstrap/css/w3.css"/>
+
+  <link rel="stylesheet" href="../bootstrap/css/footer.css"/>
+
+  <script src="../bootstrap/js/w3.js"></script>
+
+  <script src="../bootstrap/js/jquery-3.2.1.slim.min.js"></script>
+
+  <script src="../bootstrap/js/popper.min.js"></script>
+
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+  <script src="../bootstrap/js/util.js"></script>
+
+    <script src="../bootstrap/js/Chart.bundle.js"></script>
+
+  <script src="../bootstrap/js/Chart.bundle.min.js"></script>
+
+  <script src="../bootstrap/js/bootbox.min.js"></script>
+
+
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+<nav class="w3-card navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+
+  <a class="navbar-brand" href="#"> </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+
+    <span class="navbar-toggler-icon"></span>
+
+  </button>
+
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+    <ul class="navbar-nav mr-auto">
+
+      <li class="nav-item">
+
+        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+
+      </li>
+
+
+
+      <li class="nav-item">
+
+        <a class="nav-link" href="manage-kb.php">Knowledgebase</a>
+
+      </li>
+
+      <li class="nav-item">
+
+        <a class="nav-link" href="manage-process.php">Process</a>
+
+      </li>
+
+      <li class="nav-item">
+
+        <a class="nav-link" href="manage-links.php">Links</a>
+
+      </li>
+
+      <li class="nav-item active">
+
+        <a class="nav-link" href="tm-tools.html">Tools</a>
+
+      </li>
+
+
+
+       <li class="nav-item">
+
+      </li>
+    </ul>
+
+  </div>
+</nav>
+
+
+
+<br/>
+
+
+
+
+
+
+
+<div class="container-fluid justify-content-center align-items-center primary m-2">
+
+  <div class="row justify-content-center align-items-center w3-card">
+   <div class="col-12">
+         <h4 class="display-4 text-muted">
+      Partial Refund Tool
+      </h4>
+  </div>
+     <div class="col-4">
+       <div class="modal-dialog">
+        <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Subscription Info</h4>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              <div class="form-group form-group">
+                <label for="number" class="">Price</label>
+                <input id="price" type="number" class="form-control"/>
+              </div>
+
+              <div class="form- form-group">
+                <label for="number" class="">Months</label>
+                <input id="months" type="number" class="form-control"/>
+              </div>
+
+              <div class="form- form-group">
+                <label for="date" class="">Date Purchased</label>
+                <input id="purchasedate" type="date" class="form-control"/>
+              </div>
+
+              <div class="form- form-group">
+                <label for="date" class="">Refund Date</label>
+                <input id="refunddate" type="date" class="form-control"/>
+              </div>
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" onclick="computeRefund()">Submit</button>
+            </div>
+          </div>
+       </div>
+    </div>  <!--end first col-->
+
+    <div class="col-4">
+     <div class="modal-dialog">
+      <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Refund Result</h4>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="form-group form-group">
+               <textarea rows="13"  id="remmonths" hi class="form-control">
+
+              </textarea>
+            </div>
+          </div>
+
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-info" data-dismiss="modal">Copy to Clipboard</button>
+            </div>
+          </div>
+       </div>
+    </div>  <!--end of 2nd col-->
+
+  </div>  <!--end row-->
+
+
+
+
+
+<br/>
+<div class="row justify-content-center   align-items-center w3-card">
+
+<div class="col-12">
+<h4 class="display-4 text-muted">
+    Price Conversion Tool
+</h4>
+</div>
+
+   <div class="col-4">
+     <div class="modal-dialog">
+      <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Partial Refund Calculator</h4>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="form-group form-group">
+              <label for="number" class="">Price</label>
+              <input id="subprice" type="number" class="form-control"/>
+            </div>
+
+            <div class="form- form-group">
+              <label for="number" class="">Months of Subscription</label>
+              <input id="submonths" type="number" class="form-control"/>
+            </div>
+
+            <div class="form- form-group">
+              <label for="date" class="">Remaining Months of Subscription</label>
+              <input id="remmonths" type="number" class="form-control"/>
+            </div>
+
+            <div class="form- form-group">
+              <label for="date" class="">Price of desired Subscription</label>
+              <input id="desprice" type="number" class="form-control"/>
+            </div>
+
+            <div class="form- form-group">
+              <label for="date" class="">Months of desired Subscription</label>
+              <input id="desmonths" type="number" class="form-control"/>
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" onclick="computePriceDiff()">Submit</button>
+          </div>
+        </div>
+     </div>
+  </div>  <!--end first col-->
+
+    <div class="col-4">
+     <div class="modal-dialog">
+      <div class="modal-content">
+
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Refund Result</h4>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <div class="form-group form-group">
+               <textarea rows="17"  id="convresult" hi class="form-control">
+
+              </textarea>
+            </div>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-info" data-dismiss="modal">Copy to Clipboard</button>
+          </div>
+        </div>
+     </div>
+  </div>  <!--end of 2nd col-->
+  </div>  <!--end row-->
+
+
+
+
+</div> <!--end container-->
+
+
+
+<br/>
+
+
+
+
+
+<footer class="footer">
+
+      <div class="container">
+
+        <span class="text-muted"><code>Designed</code> and <code>Coded</code> by <code>KentLogic</code> for <code>KentLogic</code></span>
+
+      </div>
+
+    </footer>
+
+
+
+</body>
+
+</html>
+
+
+
+
+
+<script type="text/javascript">
+
+function computeRefund(){
+
+  //for user input/subscription details
+  var p = document.getElementById("price").value;
+  var m = document.getElementById("months").value;
+  var pd = document.getElementById("purchasedate").value;
+  var rd = document.getElementById("refunddate").value;
+
+  //for refund result
+  var rm = document.getElementById("remmonths").value;
+  var mu = document.getElementById("usedmonths").value;
+  var ppm = document.getElementById("ppmonth").value;
+  var pr = document.getElementById("parrefund").value;
+
+  var diff =  Math.abs(( Date.parse(pd) - Date.parse(rd) ) / 86400000);
+
+  if(diff < 30){
+    diff = Math.abs(( Date.parse(pd) - Date.parse(rd) ) / 86400000);
+  }
+
+  else{
+   diff =  Math.floor(Math.abs(( Date.parse(pd) - Date.parse(rd) ) / 86400000)/30);
+  }
+
+  document.getElementById("usedmonths").value = diff;
+  //document.getElementById("remmonths").value = m - diff;
+  document.getElementById("ppmonth").value = parseFloat(p / m).toFixed(2);
+  document.getElementById("parrefund").value = parseFloat(p-((p / m) * diff)).toFixed(2);
+  document.getElementById("remmonths").value = "Used months: " + diff + "\n" + "Remaining months: " + (m - diff) + "\n" + "Price per month: " +  (parseFloat(p / m).toFixed(2) + "\n" + "Refund amount: " + (parseFloat(p-((p / m) * diff)).toFixed(2)));
+
+}
+
+
+function computePriceDiff(){
+console.log("click");
+  //for user input/subscription details
+  var subprice = document.getElementById("subprice").value;
+  var submonths = document.getElementById("submonths").value;
+  var remmonths = document.getElementById("remmonths").value;
+  var desprice = document.getElementById("desprice").value;
+  var desmonths = document.getElementById("desmonths").value;
+
+  //for refund result
+  var subpermonth = subprice / submonths;
+  var subremamount = remmonths * subpermonth;
+  var subamountpermonth = desprice / desmonths;
+
+  var res = subremamount / subamountpermonth;
+  document.getElementById("convresult").value ="Price per month: " + parseFloat(subpermonth).toFixed(2) + "\n" + "Remaining amount: " + parseFloat(subremamount).toFixed(2) + "\n" + "Price per month: " +  (parseFloat(subamountpermonth).toFixed(2) + "\n" + "Refund amount: " + (parseFloat(res).toFixed(2));
+
+
+
+}
+</script>

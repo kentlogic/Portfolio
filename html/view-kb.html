@@ -1,0 +1,152 @@
+<?php
+$id = $_GET['id'];
+?>
+
+<script>
+
+</script>
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>View KB</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="../images/lara_rounded.png"/>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.css"/>
+  <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="../bootstrap/css/w3.css"/>
+  <link rel="stylesheet" href="../bootstrap/css/footer.css"/>
+  <link rel="stylesheet" href="../bootstrap/css/kl.css"/>
+  <script src="../bootstrap/js/w3.js"></script>
+  <script src="../bootstrap/js/jquery-3.2.1.slim.min.js"></script>
+  <script src="../bootstrap/js/popper.min.js"></script>
+  <script src="../bootstrap/js/bootstrap.min.js"></script>
+    <script src="../bootstrap/js/Chart.bundle.js"></script>
+  <script src="../bootstrap/js/Chart.bundle.min.js"></script>
+  <script src="../bootstrap/js/bootbox.min.js"></script>
+  <script src="../bootstrap/js/kl.js"></script>
+ 
+<!-- #region datatables files -->
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css" />
+<script src="//cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+ 
+</head>
+
+
+
+<body>
+<div id="message" class="col-3 w3-card mx-auto p-1">
+        <h3 class="display-5 code" align="center">
+          <img src='../images/icons/facepalm.svg' height="50" height="50" />
+          Nothing to load.</h3>
+      </div>
+<div class="container-fluid">
+
+
+<!--modal for add KB-->
+   <div class="modal-dialog w3-card modal-lg" id="table">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLabel">View KB</h5>
+       </div>
+      <div class="modal-body">  
+        <form method="post">
+             <div class="input-group mb-3">
+              <div class="input-group-append">
+              <span class="input-group-text">KB Category</span>
+              </div>
+              <select class="form-control" id="cat" name="kbCategory">
+                <option>Mobile</option>
+                <option>Web</option>
+                <option>Desktop</option>
+                <option>Database</option>
+              </select>
+             </div>
+
+             <div class="form-group">
+             <div class="input-group mb-3">
+              <div class="input-group-append">
+               <span class="input-group-text">Title</span>
+              </div>
+              <input type="text" class="form-control" id="title" name="kbTitle">
+             </div>
+            </div>
+
+            <div class="form-group">
+              <label for="comment">Description/Code:</label>
+              <textarea class="form-control" name="kbDesc" rows="11" id="desc" required="" placeholder="Type the instructions here..."></textarea>
+               
+            </div>
+              
+      </div>
+      <div class="modal-footer">
+        <input type="submit" name="submit" class="btn btn-success" value="Update">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Delete</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+<script type="text/javascript">
+
+function getSearchParameters() {
+      var prmstr = window.location.search.substr(4);
+      if(prmstr != null && prmstr != ""){
+      return prmstr;
+      }
+}
+
+function transformToAssocArray( prmstr ) {
+    var params = {};
+    var prmarr = prmstr.split("&");
+    for ( var i = 0; i < prmarr.length; i++) {
+        var tmparr = prmarr[i].split("=");
+        params[tmparr[0]] = tmparr[1];
+    }
+    return params;
+}
+
+var params = getSearchParameters();
+var id = params.toString();
+viewKB(id);
+//alert(id);
+
+function viewKB(id){
+  let cat; 
+   
+var xmlhttp = new XMLHttpRequest();
+var url = "../modules/knowledgebase/kb-list.php?kbtitle="+id;
+console.log("../modules/knowledgebase/kb-list.php?kbtitle="+id+"");
+console.log("URL: " + url);
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var myArr = JSON.parse(this.responseText);
+        loadAllKb(myArr);
+    }
+};
+xmlhttp.open("GET", url, true);
+xmlhttp.send();
+}
+
+function loadAllKb(arr){
+ 
+  if(arr.length <=0) {
+    showMessage("noContent");   
+  }
+  else{
+    console.log(arr);
+    showMessage("content");  
+      document.getElementById("desc").value = arr[0].kbDesc;
+      document.getElementById("cat").value = arr[0].kbCategory;
+      document.getElementById("title").value = arr[0].kbTitle;
+  }
+}
+
+
+</script>
+
+</html>
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+	<link rel="stylesheet" href="bootstrap/css/w2.css"/>
+	<link rel="stylesheet" href="bootstrap/css/footer.css"/>
+	<script src="bootstrap/js/jquery-3.2.1.slim.min.js"></script>
+	<script src="bootstrap/js/popper.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+ 
+
+<style type="text/css">
+.card-clock{
+    margin-bottom: 3px;
+}
+</style>
+</head>
+	
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+  	<img src="images/icons/icon_calendar.png"/>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Test</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Test</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      Test
+    </span>
+  </div>
+</nav>
+
+ <br/>
+
+<div class="container-fluid primary h-100" >
+	<div class="row justify-content-center align-items-center">
+	    
+  			<div class="col-md-3 col-lg-3 col-sm-12 card-clock">	
+			    <div class="card">
+				    <div class="card-header text-center bg-primary">
+				    	<img src="images/icons/icon_calendar.png"/>
+				    </div>
+				    <div class="card-body">
+				    	<h5 class="text-center font-weight-normal" id="days">Content</h5>
+				    </div> 
+				    <div class="card-footer text-center">Days</div>
+			    </div>
+			</div>
+			
+			<br/>
+
+ 			<div class="col-md-3 col-lg-3 col-sm-12 card-clock">	
+			    <div class="card">
+				    <div class="card-header text-center bg-success">
+				    	<img src="images/icons/icon_clock.png"/>
+				    </div>
+				    <div class="card-body">
+				    	<h5 class="text-center font-weight-normal" id="hours">Content</h5>
+				    </div> 
+				    <div class="card-footer text-center">Hours</div>
+			    </div>
+			</div>
+			
+			<br/>
+ 	
+  			<div class="col-md-3 col-lg-3 col-sm-12 card-clock">	
+			    <div class="card">
+				    <div class="card-header text-center bg-info">
+				    	<img src="images/icons/icon_clock.png"/>
+				    </div>
+				    <div class="card-body">
+				    	<h5 class="text-center font-weight-normal" id="minutes">Content</h5>
+				    </div> 
+				    <div class="card-footer text-center">Minutes</div>
+			    </div>
+			</div>
+
+            <br/>
+
+ 			<div class="col-md-3 col-lg-3 col-sm-12 card-clock">	
+			    <div class="card">
+				    <div class="card-header text-center bg-danger">
+				    	<img src="images/icons/icon_clock.png"/>
+				    </div>
+				    <div class="card-body">
+				    	<h5 class="text-center font-weight-normal" id="seconds">Content</h5>
+				    </div> 
+				    <div class="card-footer text-center">Seconds</div>
+			    </div>
+			</div>
+  	</div> <!--end row-->
+</div> <!--end container-->
+
+ 
+ 
+<script type="text/javascript">
+ window.onload = function () {
+	    var days = document.getElementById("days");
+	    var hours = document.getElementById("hours");
+	    var minutes = document.getElementById("minutes");
+	    var seconds = document.getElementById("seconds");
+
+    days.innerHTML='days';
+    hours.innerHTML='hours';
+    minutes.innerHTML='minutes';
+    seconds.innerHTML='seconds';
+};
+</script>
+
+</body>
+</html>
+
+
