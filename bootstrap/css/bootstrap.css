@@ -4368,6 +4368,64 @@ input[type="button"].btn-block {
   color: #fff;
 }
 
+
+
+/*
+Custom Color - Strong Blue
+*/
+
+.navbar-strong-blue .navbar-brand {
+  color: #fff;
+}
+
+.navbar-strong-blue .navbar-brand:hover, .navbar-strong-blue .navbar-brand:focus {
+  color: #fff;
+}
+
+.navbar-strong-blue .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-strong-blue .navbar-nav .nav-link:hover, .navbar-strong-blue .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-strong-blue .navbar-nav .nav-link.disabled {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.navbar-strong-blue .navbar-nav .show > .nav-link,
+.navbar-strong-blue .navbar-nav .active > .nav-link,
+.navbar-strong-blue .navbar-nav .nav-link.show,
+.navbar-strong-blue .navbar-nav .nav-link.active {
+  color: #fff;
+}
+
+.navbar-strong-blue .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-strong-blue .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-strong-blue .navbar-text {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-strong-blue .navbar-text a {
+  color: #fff;
+}
+
+.navbar-strong-blue .navbar-text a:hover, .navbar-strong-blue .navbar-text a:focus {
+  color: #fff;
+}
+
+
+
+
+
 .card {
   position: relative;
   display: -ms-flexbox;
@@ -6143,7 +6201,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: #0077b3 !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
@@ -6151,6 +6209,23 @@ button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #1d2124 !important;
 }
+
+
+
+/*Custom Color Strong Blue*/
+
+.bg-strongblue {
+  background-color: #0077b3 !important;
+}
+
+a.bg-strongblue:hover, a.bg-strongblue:focus,
+button.bg-strongblue:hover,
+button.bg-strongblue:focus {
+  background-color: #0086b3 !important;
+}
+
+
+
 
 .bg-white {
   background-color: #fff !important;
