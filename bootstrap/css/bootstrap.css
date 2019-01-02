@@ -6212,7 +6212,12 @@ button.bg-dark:focus {
 
 
 
-/*Custom Color Strong Blue*/
+/*Custom Color Strong Blue
+  background-color: #0077b3 !important;
+    background-image: url("images/lima.jpg");
+
+
+*/
 
 .bg-strongblue {
   background-color: #0077b3 !important;
@@ -7413,13 +7418,15 @@ button.bg-strongblue:focus {
   z-index: 1030;
 }
 
+
+
 @supports ((position: -webkit-sticky) or (position: sticky)) {
   .sticky-top {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 1020;
-  }
+   }
 }
 
 .sr-only {

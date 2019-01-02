@@ -39,6 +39,30 @@
 
   
 <body>
+
+
+<script>
+  //Facebook SDK
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId            : 'your-app-id',
+      autoLogAppEvents : true,
+      xfbml            : true,
+      version          : 'v3.2'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "https://connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+    
+
+
   <div class="container-fluid d-flex h-100">
 
      <div class="row h-100 justify-content-center align-items-center ">
@@ -99,10 +123,12 @@
       <div class="carousel-inner">
      
         <div class="carousel-item active">
-          <img class="d-block w-100" src="../images/lima.jpg" alt="Chicago" width="40%" height="350">
+          <img class="d-block w-100" src="../images/lara.png" alt="Chicago" width="40%" height="350">
           <div class="carousel-caption d-none d-md-block">
-            <h5>L.A.R.A.</h5>
-            <p>test</p>
+            <div class="form-group c-caption p-2 m-2">
+              <h5 class="">L.A.R.A.</h5>
+              <p>test</p>
+            </div>
           </div>
          </div>
 
@@ -186,7 +212,7 @@
 
 
 
-              <div class="col-lg-6 col-sm-8 text-center m-2 p-3 w3-card" style="bottom: -35px;">
+              <div class="col-lg-6 col-sm-8 text-center m-2 p-3 w3-card" >
                 <img src="images/icons/open_source.png" width="40%" class="rounded-circle w3-card img-thumbnail"/>
                 <h1>
                   <h4 class="display-4">Android</h4>
@@ -202,7 +228,7 @@
 
 
 
-             <div class="w3-card col-lg-6 col-sm-12 bottom-menu bg-dark ">
+             <div class="w3-card col-lg-6 col-sm-12 bottom-menu bg-dark" style="bottom: 0px;">
                 <div class="row align-items-center justify-content-center text-center">
                   <div class="col menu_btn">
                       <a href="index.html#home" class="menu_btn">
@@ -215,15 +241,11 @@
                     </a>
                   </div>                      
                   <div class="col">
-                    <a href="fb.com/kentlogicofficial">
-                      <img src="images/icons/like_iconw.png" width="30" height="30">
-                    </a>
-                  </div>
+                     <img src="images/icons/like_iconw.png" width="30" height="30" data-toggle="modal" data-target="#fb">
+                   </div>
                   <div class="col">
-                    <a href="fb.com/kentlogicofficial">
-                      <img src="images/icons/mail_iconw.png" width="30" height="30">
-                    </a>
-                  </div>
+                    <img src="images/icons/mail_iconw.png" width="30" height="30" data-toggle="modal" data-target="#fb">
+                   </div>
                 </div>
            </div><!--end col-->
  
@@ -233,8 +255,56 @@
  
 
  
- 
 
+
+ 
+<!-- The Modal -->
+<div class="modal" id="fb">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="embed-responsive embed-responsive-21by9">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKent-Logic-354110892040686&tabs&width=465&height=180&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" class="embed-responsive-item" width="450" height="auto" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        </div>   
+   
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+
+      <!-- The Modal -->
+<div class="modal" id="contact">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+
+        </div>      
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
 
 
  
