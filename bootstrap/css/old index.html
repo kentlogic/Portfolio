@@ -1,0 +1,289 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ePortfolio - Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" href="images/lara_rounded.png"/>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css"/>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+  <link rel="stylesheet" href="bootstrap/css/w3.css"/>
+  <link rel="stylesheet" href="bootstrap/css/footer.css"/>
+  <link rel="stylesheet" href="bootstrap/css/kl.css"/>
+  <script src="bootstrap/js/w3.js"></script>
+  <script src="bootstrap/js/jquery-3.2.1.slim.min.js"></script>
+  <script src="bootstrap/js/popper.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+  <script src="bootstrap/js/util.js"></script>
+    <script src="bootstrap/js/Chart.bundle.js"></script>
+  <script src="bootstrap/js/Chart.bundle.min.js"></script>
+  <script src="bootstrap/js/bootbox.min.js"></script>
+  <script src="bootstrap/js/moment.js"></script>
+  <script src="bootstrap/js/kl.js"></script>
+
+<style>
+
+ 
+
+html {
+  font: 14px/2 Georgia, serif;
+  scroll-behavior: smooth;
+}
+
+.time{
+  color:#a9a9a9;
+}
+</style>
+ 
+</head>
+
+
+  
+<body>
+ 
+
+
+  <div id="home" class="container-fluid d-flex h-100">
+
+     <div class="row h-100 justify-content-center align-items-center ">
+
+            <div class="w3-card col-lg-6 col-sm-12 sticky-top bg-dark">
+             <nav class="nav-mobile navbar navbar-expand-lg navbar-expand-md navbar-expand-sm navbar-strong-blue bg-dark sticky-top">
+              <a class="navbar-brand" href="#"> </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+               
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item">
+                    <big id="time" class="display-6 time text-center"></big><span class="sr-only"></span> 
+                  </li>
+                </ul>
+              
+                  <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="index.html#prof"> <span class="sr-only">(current)</span></a>
+                  </li>
+             
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Projects</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="index.html?#lara">LARA</a>
+                      <a class="dropdown-item" href="index.html?#kentlogic">KentLogic</a>
+                      </div>
+                  </li>
+ 
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Work</a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="index.html?#custservice">Customer Service</a>
+                      <a class="dropdown-item" href="index.html?#techsupport">Technical Support</a>
+                      </div>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" data-toggle="modal" data-target="#contact">Contact</a>
+                  </li>
+             
+                </ul>
+                 
+              </div>
+            </nav>
+           </div><!--end col-->
+
+
+
+          <div class="col-lg-6 align-items-center col-sm-12 text-left w3-card p-5 m-2 bg-dark">
+
+
+          <div class="container-fluid">
+              <div class="row p-1">
+
+                <div id="profile" class="col-12 text-left w3-card bg-light p-5">
+                  <div class="row text-center justify-content-center">
+                    <div class="col-12 ">  
+                      <img src="images/temp_photo.png" width="35%" class="rounded-circle w3-card img-thumbnail"/>
+                    </div>  
+                     <div class="col-12">
+                        <h2 class="display-5">Vincent Paul Dais</h2>
+                         <h4 class="blockquote text-muted m-3">Cloud Security Engineer | Android Developer | Web Development Enthusiast | Trying hard to learn Photoshop</h4>
+                      </div> 
+                    </div>  
+                </div>  <!--end col-->
+              </div>
+
+              <div class="row p-1"> 
+                <div id="custservice" class="col-12 text-center w3-card bg-light p-5">
+
+                  <img src="images/icons/open_source.png" width="40%" class="rounded-circle w3-card img-thumbnail"/>
+                  <section >
+                    <h4 class="display-4">CS</h4>
+                     <p class="blockquote text-muted"></p>
+                  </section>
+                </div>  <!--end col-->
+              </div>
+
+
+              <div class="row p-1"> 
+                <div id="techsupport" class="col-12 text-left w3-card bg-light">
+                  <img src="images/icons/open_source.png" width="40%" class="rounded-circle w3-card img-thumbnail"/>
+                  <section >
+                    <h4 class="display-4">TS</h4>
+                     <p class="blockquote text-muted"></p>
+                  </section>
+                </div>  <!--end col-->
+              </div>
+
+              <div class="row p-1"> 
+                <div class="col-12 text-left w3-card bg-light">
+                  <img src="images/icons/open_source.png" width="40%" class="rounded-circle w3-card img-thumbnail"/>
+                  <section id="lara">
+                    <h4 class="display-4">LARA</h4>
+                     <p class="blockquote text-muted"></p>
+                  </section>
+                </div>  <!--end col-->
+              </div>
+
+
+              <div class="row p-1"> 
+                <div id="kentlogic" class="col-12 text-left w3-card bg-light">
+                  <img src="images/icons/open_source.png" width="40%" class="rounded-circle w3-card img-thumbnail"/>
+                  <h1>
+                    <h4 class="display-4">KentLogic</h4>
+                     <p class="blockquote text-muted"></p>
+                  </h1>   
+                </div>  <!--end col-->
+              </div>
+
+              </div> <!--end inner row-->
+
+           </div> <!--end col-->
+
+              
+             
+ 
+
+             <div class="w3-card col-lg-6 col-sm-12 bottom-menu bg-dark" style="bottom: 0px;">
+                <div class="row align-items-center justify-content-center text-center">
+                  <div class="col menu_btn">
+                      <a href="index.html#home" class="menu_btn">
+                        <img src="images/icons/home_iconw.png" width="30" height="30">
+                      </a>
+                  </div>
+                  <div class="col menu_btn">
+                    <a href="#profile">
+                      <img src="images/icons/profile_iconw.png" width="30" height="30">
+                    </a>
+                  </div>                      
+                  <div class="col">
+                     <img src="images/icons/like_iconw.png" width="30" height="30" data-toggle="modal" data-target="#fb">
+                   </div>
+                  <div class="col">
+                    <img src="images/icons/mail_iconw.png" width="30" height="30" data-toggle="modal" data-target="#contact">
+                   </div>
+                </div>
+           </div><!--end col-->
+ 
+
+      </div> <!--end row-->
+  </div> <!--end container-->
+ 
+
+ 
+
+
+ 
+<!-- The Modal -->
+<!-- Modal -->
+<div class="modal fade" id="fb" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+         <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="embed-responsive embed-responsive-21by9">
+            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKent-Logic-354110892040686&tabs&width=465&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" class="embed-responsive-item" width="450" height="550" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+        </div>   
+   
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- The Modal -->
+<div class="modal" id="contact">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Modal Heading</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+
+        </div>      
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ 
+ 
+<script type="text/javascript">
+
+var d = new Date();
+var t = d.getTime();
+
+var time = document.getElementById("time");
+time.innerHTML = t;
+
+
+$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".navbar-fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
+  });
+});
+
+//for time and date
+$(document).ready(function() {
+    var interval = setInterval(function() {
+        var momentNow = moment();
+        //$('#date').html(momentNow.format('MMMM DD, YYYY') + ' '
+         //                   + momentNow.format('dddd')
+        //                     .substring(0,9).toUpperCase());
+        $('#time').html(momentNow.format('hh:mm:ss a'));
+    }, 100);
+});  
+</script>
+
+
+ 
+
+</body>
+</html>
+
+
+

@@ -1,8 +1,14 @@
 body{
 	height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: fixed;
+  background-attachment: fixed;
 	align-items: center;
+    background-color: #222;
+ /*background: url("../../images/venveo_unsplash.jpg") no-repeat fixed center; */
 }
-
+ 
 .bottom{
  	align-items: center;
 }
@@ -69,3 +75,26 @@ a.menu_btn:hover{
 background-color: lighten(white, 20%);
 }
 
+
+
+.nav-mobile{
+  height: 30px;
+  padding: 3px;
+}
+
+ 
+
+.modal-backdrop {
+background: rgba(76, 175, 80, );
+     opacity: 1;
+
+}
+
+/**
+ background: url(../../images/venveo_unsplash.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  **/

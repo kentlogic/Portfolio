@@ -616,8 +616,8 @@ pre code {
   position: relative;
   width: 100%;
   min-height: 1px;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .col {
@@ -4426,6 +4426,68 @@ Custom Color - Strong Blue
 
 
 
+
+
+/*
+Custom Color - Light Blue
+*/
+ 
+.navbar-light-blue .navbar-brand {
+  color: #fff;
+}
+
+.navbar-light-blue .navbar-brand:hover, .navbar-light-blue .navbar-brand:focus {
+  color: #fff;
+}
+
+.navbar-light-blue .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-light-blue .navbar-nav .nav-link:hover, .navbar-light-blue .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-light-blue .navbar-nav .nav-link.disabled {
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.navbar-light-blue .navbar-nav .show > .nav-link,
+.navbar-light-blue .navbar-nav .active > .nav-link,
+.navbar-light-blue .navbar-nav .nav-link.show,
+.navbar-light-blue .navbar-nav .nav-link.active {
+  color: #fff;
+}
+
+.navbar-light-blue .navbar-toggler {
+  color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-light-blue .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-light-blue .navbar-text {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-light-blue .navbar-text a {
+  color: #fff;
+}
+
+.navbar-light-blue .navbar-text a:hover, .navbar-light-blue .navbar-text a:focus {
+  color: #fff;
+}
+
+.navbar-light-blue big{
+  color: #fff;
+}
+
+
+
+
+
 .card {
   position: relative;
   display: -ms-flexbox;
@@ -5479,7 +5541,8 @@ button.close {
   bottom: 0;
   left: 0;
   z-index: 1040;
-  background-color: #000;
+  background-color: #0b0c10 !important;
+  opacity: 1 !important;
 }
 
 .modal-backdrop.fade {
@@ -5488,6 +5551,8 @@ button.close {
 
 .modal-backdrop.show {
   opacity: 0.5;
+  filter: alpha(opacity=50);
+
 }
 
 .modal-header {
@@ -6211,6 +6276,17 @@ button.bg-dark:focus {
 }
 
 
+.bg-lightblue{
+  background-color: #66B7DE !important;
+}
+
+ .bg-lightgray{
+  background-color: #d1d1d1 !important;
+}
+
+.bg-darkgray{
+  background-color: #282828 !important;
+}
 
 /*Custom Color Strong Blue
   background-color: #0077b3 !important;
