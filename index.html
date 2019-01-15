@@ -48,7 +48,7 @@ html {
         <div class="w3-card col-lg-6 col-sm-12 sticky-top bg-lightblue">
           <div class="row">
             <div class="col navbar-light-blue">
-              <img src="images/icons/wifi.png" width="25" class="p-1 mb-1"/>
+              <img src="images/icons/wifi.png" width="30" class="p-1 mb-1"/>
               <big id="" class="display-6 mx-auto"></big>
             </div>
 
@@ -195,15 +195,11 @@ html {
                       <img src="images/icons/profile_iconw.png" width="30" height="30">
                     </a>
                   </div>                      
-                  <div class="col">
-                     <img src="images/icons/like_iconw.png" width="30" height="30" data-toggle="modal" data-target="#fb">
-                  </div>
+  
 
-                 <div class="col">
-                     <img src="images/icons/work_iconw.png" width="30" height="30" data-toggle="modal" data-target="#fb">
-                  </div>
+  
                   <div class="col">
-                    <img src="images/icons/mail_iconw.png" width="30" height="30" data-toggle="modal" data-target="#contact">
+                    <img src="images/icons/mail_iconw.png" width="30" height="30" data-toggle="modal" data-target="#fb">
                    </div>
                 </div>
            </div><!--end col-->
@@ -229,7 +225,28 @@ html {
       <!-- Modal body -->
       <div class="modal-body" >
         <div class="embed-responsive embed-responsive-21by9">
-            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKent-Logic-354110892040686&tabs&width=465&height=0&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" class="embed-responsive-item" width="4" height="5" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+          <!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- Your customer chat code -->
+<div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="354110892040686"
+  theme_color="#0084ff"
+  logged_in_greeting="Thanks for your message! How can I help you?"
+  logged_out_greeting="Thanks for your message! How can I help you?">
+</div>
+            <!--iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKent-Logic-354110892040686&tabs&width=465&height=0&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" class="embed-responsive-item" width="4" height="5" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe-->
+            
+            <iframe src="https://m.me/kentlogicdev/" class="embed-responsive-item" width="4" height="5" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
             <br/>
         </div>   
    
