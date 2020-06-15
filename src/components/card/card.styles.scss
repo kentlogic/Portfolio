@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat'),
+         url('./montserrat.ttf') format('truetype'), /* Safari, Android, iOS */
+  }
+
+.card {
+    padding: 20px;
+    box-shadow: 0 7px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 50vw;
+}
+
+.title {
+   font-size: 1.3em; 
+   margin:20px;
+}
+
+.content {
+    font-family: Montserrat ;
+    margin:30px;
+    font-size: 1.2em;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 90vw;
+    }
+    .title {
+        font-size: .8em; 
+        margin:10px;
+     }
+     .content {
+        margin:20px;
+        font-size: .5em;
+    }
+}

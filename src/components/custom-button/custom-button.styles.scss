@@ -1,0 +1,60 @@
+.custom-button {
+    min-width:20px;
+    min-height: 40px;
+    letter-spacing: 0.5px;
+    line-height: 20px;
+    padding: 0 35px 0 35px;
+    font-size: .8em;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Open Sans Condensed';
+    font-weight: bolder;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+    
+    @media only screen and (max-width: 600px) {
+      .custom-button {
+          min-width: 100px;
+          font-size: 0.3em;
+          margin: 0;
+          height: 20px;
+      }
+    }
+
+
+    &:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+    }
+  
+    &.about-me {
+      background-color: #4285f4;
+      color: white;
+      border-radius: 10px;
+  
+      &:hover {
+        background-color: #357ae8;
+        border: none;
+      }
+    }
+  
+    &.inverted {
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+  
+      &:hover {
+        background-color: black;
+        color: white;
+        border: none;
+      }
+    }
+  }
+  
+
+  
