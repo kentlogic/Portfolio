@@ -1,17 +1,13 @@
-import React from 'react'
-import './card.styles.scss'
-import CustomButton from '../custom-button/custom-button.component'
+import React from "react";
+import "./card.styles.scss";
+// import CustomButton from "../custom-button/custom-button.component";
+import { CardContainer, CardTitle, CardContent } from "./card.style";
 
-const Card = ({header, content}) => (
-    <div class='card'>
-            <h1 className='title'>{header}</h1>
-            <p className='content'>
-                {content}
-            </p>
-            <CustomButton isAboutMe>
-                More about me
-            </CustomButton>
-    </div>
+const Card = ({ children, title, content }) => (
+  <CardContainer>
+    <CardTitle>{title}</CardTitle>
+    <CardContent>{content}</CardContent>
+  </CardContainer>
 );
 
 export default Card;

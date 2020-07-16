@@ -1,12 +1,28 @@
  
-.footer {
-    position: fixed;
-    bottom: 0;
-    width: 100vw;
-    background-color: red;
-    color: white;
-    text-align: center;
-  }
- 
 
+ 
+.footer {
+  position: fixed;
+  width: 100vw;
+  display: flex;
+  background-color: whitesmoke;
+  color: white;
+  bottom: 0;
+
+  .footer-icon {
+    width: 2px;
+    padding: 60px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .footer {
+      align-items: center;
+    }
+    .footer-icon {
+      width: 1px;
+      padding: 1px;
+    }
+  }
+
+}
  

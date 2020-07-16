@@ -1,31 +1,33 @@
-import React from 'react';
-import './App.css';
-import Header from '../components/header/header.component';
-import HomePage from '../pages/home/home.component';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import AboutPage from '../pages/about/about-page.component';
-import Footer from '../components/footer/footer.component';
+import React from "react";
+import Header from "../components/header/header.component";
+import HomePage from "../pages/home/home.component";
+import { Route, Switch } from "react-router-dom";
+import ProfilePage from "../pages/profile/profile-page.component";
+import Footer from "../components/footer/footer.component";
+import { AppContainer, AppHeader, AppContent, AppFooter } from "./app.style";
 
 class App extends React.Component {
-    render() {
-      return (
-        <div className='container'>
-          <div className='header'>
-            <Header date={new Date()}/>
-          </div>
-          <div>
-            <BrowserRouter>
-              <Switch>
-              <Route exact path='/' component={HomePage} />
-              <Route path='/about' component={AboutPage} />
-              </Switch>
-            </BrowserRouter>
-          </div>
-          <div className='footer'>
-            <Footer />
-          </div>
-        </div>
-      );
+  componentDidMount() {
+    console.log("Mounted");
+    console.log("url", process.env.PUBLIC_URL);
+  }
+  render() {
+    return (
+      <AppContainer>
+        <AppHeader>
+          <Header />
+        </AppHeader>
+        <AppContent>
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route exact path="/profile" component={ProfilePage} />
+          </Switch>
+        </AppContent>
+        <AppFooter>
+          <Footer />
+        </AppFooter>
+      </AppContainer>
+    );
   }
 }
 export default App;

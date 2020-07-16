@@ -1,19 +1,17 @@
-import React from 'react'
-import './header.styles.scss'
-import { spannk } from 'react-router-dom';
+import React from "react";
+//import './header.styles.scss'
 
-const Header = ({date}) => (
-    <nav class="header sticky">
-        <div class='nav-items'>
-            <div className='nav-item'>Home</div>
-            <div className='nav-item'>Profile</div>
-            <div className='nav-item'>Projects</div>
-            <div className='nav-item'>Contact</div>
-         </div>
-       
-       
+import { HeaderContainer, NavItems, NavLink } from "./header.styles";
 
-    </nav>     
-)
+const Header = () => (
+  <HeaderContainer>
+    <NavItems>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/profile">About</NavLink>
+      <NavLink to="/projects">Projects</NavLink>
+      <NavLink to="/contact">Contact</NavLink>
+    </NavItems>
+  </HeaderContainer>
+);
 
 export default Header;

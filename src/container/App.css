@@ -1,20 +1,27 @@
-* { 
-    margin: 0 auto;
-    box-sizing: border-box;
+@font-face {
+  font-family: Ubuntu;
+  src: url(ubuntu.ttf);
 }
 
- 
+body {
+  font-family: Ubuntu;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: auto;
+}
 
-.container {
-    display: flex;
-    flex-direction: column;
- }
+.appContent {
+  margin-top: 10px;
+  background-color: green;
+  border: 10px solid yellow;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  overflow: auto;
+}
 
- .header {
-     display: flex;
-     width: 100vw;
- }
-
- .footer {
-     display: flex;
- }
+.appFooter {
+  bottom: 0;
+  position: fixed;
+}
