@@ -19,6 +19,47 @@ const HomePage = () => {
           More about me
         </CustomButton>
       </Card>
+
+      <Card title={"title"} content={content}>
+        <CustomButton type={"input"} name={"profile"}>
+          More about me
+        </CustomButton>
+      </Card>
+      <Card title={"title"} content={content}>
+        <CustomButton type={"input"} name={"profile"}>
+          More about me
+        </CustomButton>
+      </Card>
+      <Card title={"title"} content={content}>
+        <CustomButton type={"input"} name={"profile"}>
+          More about me
+        </CustomButton>
+      </Card>
+      <Card title={"title"} content={content}>
+        <CustomButton type={"input"} name={"profile"}>
+          More about me
+        </CustomButton>
+      </Card>
+      <Card title={"title"} content={content}>
+        <CustomButton type={"input"} name={"profile"}>
+          More about me
+        </CustomButton>
+      </Card>
+      <Card title={"title"} content={content}>
+        <CustomButton type={"input"} name={"profile"}>
+          More about me
+        </CustomButton>
+      </Card>
+      <Card title={"title"} content={content}>
+        <CustomButton type={"input"} name={"profile"}>
+          More about me
+        </CustomButton>
+      </Card>
+      <Card title={"title"} content={content}>
+        <CustomButton type={"input"} name={"profile"}>
+          More about me
+        </CustomButton>
+      </Card>
     </Container>
   );
 };

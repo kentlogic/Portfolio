@@ -2,54 +2,64 @@ import styled from "styled-components";
 import { device } from "../../utils/media-queries.util";
 
 export const CardContainer = styled.div`
-  background-color: #fff;
-  border: 12px solid red;
-  padding: 0.5em;
+  padding: 1em;
   margin: 0.5em;
+  background-color: #f1f1f1;
+  box-shadow: 0 20px 20px 0 rgba(0, 0, 0, 0.5);
   display: flex;
-
-  @media ${device.mobileS} {
-    width: 90vw;
-    display: flex;
-    flex-direction: column;
-  }
-
-  @media ${device.mobileM} {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-  }
-
-  @media ${device.mobileL} {
-    width: 80vw;
-  }
-
-  @media ${device.laptop} {
-    display: flex;
-    width: 40vw;
-  }
-
-  @media ${device.laptopL} {
-    width: 40vw;
-  }
-
-  @media ${device.desktop} {
-    width: 30vw;
-  }
-
-  @media ${device.desktopL} {
-    width: 20vw;
-  }
+  flex-direction: column;
 `;
 
 export const CardTitle = styled.h2`
-  font-size: 1.2em;
-  padding: 2em;
+  font-family: "Roboto", sans-serif;
+  padding: 0.5em;
   background: orange;
+
+  @media ${device.custom} {
+    font-size: 1.8em;
+    background: green;
+  }
+
+  @media ${device.mobile} {
+    font-size: 2em;
+  }
+
+  @media ${device.tablet} {
+    font-size: 2em;
+  }
+  @media ${device.desktop} {/
+    font-size: 3.5em;
+  }
+
+  @media ${device.desktopL} {
+    font-size: 4.5em;
+  }
 `;
 
 export const CardContent = styled.p`
-  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  text-align: justify;
+  text-indent: 1.5em;
+  padding: 0.5em;
   background: green;
-  font-size: 0.7em;
+
+ @media ${device.custom} {
+    font-size: 1.4em;
+    background: green;
+  }
+
+  @media ${device.mobile} {
+    font-size: 2em;
+  }
+
+  @media ${device.tablet} {
+    font-size: 2em;
+  }
+  @media ${device.desktop} {/
+    font-size: 2em;
+  }
+
+  @media ${device.desktopL} {
+    font-size: 3em;
+  }
 `;

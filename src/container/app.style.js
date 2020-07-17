@@ -1,9 +1,8 @@
 import styled from "styled-components";
-
+import { device } from "../utils/media-queries.util";
 export const AppContainer = styled.div`
   height: 100vh auto;
-  width: 100vw;
-  background: #222;
+  box-sizing: border-box;
 `;
 
 export const AppHeader = styled.div`
@@ -11,20 +10,44 @@ export const AppHeader = styled.div`
   width: 100vw;
   position: fixed;
   top: 0;
-  background: blue;
 `;
 
 export const AppContent = styled.div`
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-  height: 80vh auto;
-  border: 25px solid blue;
-  width: 100vw;
-  background: #222;
+  height: auto;
+
+  @media ${device.custom} {
+    background: green;
+    margin-top: 4.5vh;
+    margin-bottom: 5.5vh;
+  }
+
+  @media ${device.mobile} {
+    background: yellow;
+    margin-top: 5.5vh;
+    margin-bottom: 5.5vh;
+  }
+
+  @media ${device.tablet} {
+    background: blue;
+    margin-top: 5.5vh;
+    margin-bottom: 5.5vh;
+  }
+
+  @media ${device.desktop} {
+    background: red;
+    margin-top: 5.5.5vh;
+    margin-bottom: 5.5vh;
+  }
+
+  @media ${device.desktopL} {
+    background: violet;
+    margin-top: 5.5.5vh;
+    margin-bottom: 5.5vh;
+  }
 `;
 
 export const AppFooter = styled.div`
-  height: auto;
+  max-height: 10vh;
   width: 100vw;
   position: fixed;
   bottom: 0;

@@ -2,76 +2,75 @@ import styled from "styled-components";
 import { device } from "../../utils/media-queries.util";
 
 export const FooterContainer = styled.div`
-  background: #222;
-  height: auto;
-  width: 100vw;
+  height: 5vh;
+  width: 100%;
   display: flex;
+  padding: 0.2em;
   justify-content: space-between;
-  display: flex;
 
   & a {
     color: #fff;
   }
 
-  @media ${device.mobileS} {
+  @media ${device.custom} {
+    font-size: .5em;
+    background: green;
+  }
+
+  @media ${device.mobile} {
     font-size: 0.7em;
-    height: auto;
+    background: yellow;
   }
 
-  @media ${device.mobileM} {
+  @media ${device.tablet} {
+    font-size: .9em;
+    background: blue;
+  }
+  @media ${device.desktop} {/
     font-size: 1em;
-    height: auto;
-  }
-
-  @media ${device.laptop} {
-    font-size: 1em;
-    padding: 5px;
-    height: 50px;
-  }
-
-  @media ${device.laptopL} {
-    font-size: 1em;
-    height: auto;
-  }
-
-  @media ${device.desktop} {
-    font-size: 1.5em;
-    padding: 20px;
-    height: auto;
+    background: red;
   }
 
   @media ${device.desktopL} {
-    font-size: 1em;
-    padding: 20px;
-    height: auto;
+    font-size: 1.2em;
+    background: violet;
   }
 `;
 
 export const FooterNote = styled.h3`
   color: #fff;
-  padding: 10px;
 
-  @media ${device.mobileS} {
+  height: 8vh;
+  width: 100%;
+  display: flex;
+  padding: 0.2em;
+  justify-content: space-between;
+
+  & a {
+    color: #fff;
+  }
+
+  @media ${device.custom} {
+    font-size: .5em;
+    background: green;
+  }
+
+  @media ${device.mobile} {
     font-size: 0.7em;
+    background: yellow;
   }
 
-  @media ${device.mobileM} {
+  @media ${device.tablet} {
+    font-size: .9em;
+    background: blue;
+  }
+  @media ${device.desktop} {/
     font-size: 1em;
-  }
-
-  @media ${device.laptop} {
-    font-size: 1em;
-  }
-
-  @media ${device.laptopL} {
-    font-size: 1.5em;
-  }
-
-  @media ${device.desktop} {
-    font-size: 2em;
+    background: red;
   }
 
   @media ${device.desktopL} {
-    font-size: 3em;
+    font-size: 1.2em;
+    background: violet;
   }
 `;

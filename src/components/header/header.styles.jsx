@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { device } from "../../utils/media-queries.util";
 
 export const NavLinkStyles = css`
-  padding: 10px 15px;
+  padding: 0 0.5em;
   transition: all 0.3s linear;
   cursor: pointer;
   border-radius: 2px;
@@ -15,53 +15,37 @@ export const NavLinkStyles = css`
 `;
 
 export const HeaderContainer = styled.nav`
-  background: #222;
-  height: 70px;
-  width: 100vw;
+  width: 100%;
   display: flex;
+  padding: 0.2em;
   justify-content: space-between;
-  margin-bottom: 25px;
 
   & a {
     color: #fff;
   }
 
-  @media ${device.mobileS} {
-    /* Top Navigation*/
+  @media ${device.custom} {
+    font-size: .5em;
+    background: green;
+  }
+
+  @media ${device.mobile} {
     font-size: 0.7em;
-    margin: 0;
-    height: 30px;
+    background: yellow;
   }
 
-  @media ${device.mobileM} {
-    /* Top Navigation*/
+  @media ${device.tablet} {
+    font-size: .9em;
+    background: blue;
+  }
+  @media ${device.desktop} {/
     font-size: 1em;
-    margin: 0;
-    height: 40px;
-  }
-
-  @media ${device.laptop} {
-    /* Top Navigation*/
-    font-size: 1em;
-    margin: 0;
-    height: 50px;
-  }
-
-  @media ${device.laptopL} {
-    /* Top Navigation*/
-    font-size: 1.5em;
-    margin: 0;
-    height: 70px;
-  }
-
-  @media ${device.desktop} {
-    font-size: 2em;
-    height: 100px;
+    background: red;
   }
 
   @media ${device.desktopL} {
-    font-size: 3em;
-    height: 120px;
+    font-size: 1.5em;
+    background: violet;
   }
 `;
 
