@@ -1,65 +1,42 @@
 import React from "react";
-import "./home.styles.scss";
+import {
+  Container,
+  IntroText,
+  ProjContainer,
+  ProjHeader,
+  ProjBody,
+  // ImagesDiv,
+  // ControlsDiv,
+  // ArrowBtn,
+} from "./home.style";
+// import { content_data } from "./home.data";
+// import ImageSlide from "../../components/image-slide/image-slide.component";
 import Card from "../../components/card/card.component";
-import CustomButton from "../../components/custom-button/custom-button.component";
-import { Container } from "./home.style";
-import { content_data } from "./home.data";
-
 const HomePage = () => {
-  const content = content_data[0].content;
   return (
     <Container>
-      <Card title={"title"} content={content}>
-        <CustomButton type={"input"} name={"profile"}>
-          More about me
-        </CustomButton>
-      </Card>
-      <Card title={"title"} content={content}>
-        <CustomButton type={"input"} name={"profile"}>
-          More about me
-        </CustomButton>
-      </Card>
+      <IntroText>Hi, I'm Vincent</IntroText>
 
-      <Card title={"title"} content={content}>
-        <CustomButton type={"input"} name={"profile"}>
-          More about me
-        </CustomButton>
-      </Card>
-      <Card title={"title"} content={content}>
-        <CustomButton type={"input"} name={"profile"}>
-          More about me
-        </CustomButton>
-      </Card>
-      <Card title={"title"} content={content}>
-        <CustomButton type={"input"} name={"profile"}>
-          More about me
-        </CustomButton>
-      </Card>
-      <Card title={"title"} content={content}>
-        <CustomButton type={"input"} name={"profile"}>
-          More about me
-        </CustomButton>
-      </Card>
-      <Card title={"title"} content={content}>
-        <CustomButton type={"input"} name={"profile"}>
-          More about me
-        </CustomButton>
-      </Card>
-      <Card title={"title"} content={content}>
-        <CustomButton type={"input"} name={"profile"}>
-          More about me
-        </CustomButton>
-      </Card>
-      <Card title={"title"} content={content}>
-        <CustomButton type={"input"} name={"profile"}>
-          More about me
-        </CustomButton>
-      </Card>
-      <Card title={"title"} content={content}>
-        <CustomButton type={"input"} name={"profile"}>
-          More about me
-        </CustomButton>
-      </Card>
+      <ProjContainer>
+        <ProjHeader>
+          <h2>Featured Projects</h2>
+        </ProjHeader>
+        <ProjBody>
+          <Card
+            title={"title"}
+            subtitle={"subtitle"}
+            imgUrl={"./download.svg"}
+            body={"Sample content"}
+          ></Card>
+
+          <Card
+            title={"title"}
+            subtitle={"subtitle"}
+            imgUrl={"./download.svg"}
+            body={"Sample content"}
+          ></Card>
+        </ProjBody>
+      </ProjContainer>
     </Container>
   );
 };

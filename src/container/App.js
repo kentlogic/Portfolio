@@ -5,7 +5,6 @@ import { Route, Switch } from "react-router-dom";
 import ProfilePage from "../pages/profile/profile-page.component";
 import Footer from "../components/footer/footer.component";
 import { AppContainer, AppHeader, AppContent, AppFooter } from "./app.style";
-import GlobalFonts from "../fonts/fonts";
 
 class App extends React.Component {
   componentDidMount() {
@@ -15,7 +14,6 @@ class App extends React.Component {
   render() {
     return (
       <AppContainer>
-        <GlobalFonts />
         <AppHeader>
           <Header />
         </AppHeader>

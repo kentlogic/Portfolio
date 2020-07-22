@@ -1,39 +1,18 @@
 import React from "react";
-// import "./footer.styles.scss";
 // import ImageLink from "../image-link/image-link.component";
-import { FooterContainer, FooterNote } from "./footer.styles";
-import icon from "./icon.png";
-
-console.log(icon);
+import { FooterContainer, FooterNote, FooterIcons } from "./footer.styles";
 
 const Footer = () => (
   <FooterContainer>
-    <FooterNote>Powered by React</FooterNote>
-    {/* <ImageLink
-      imgurl="./icon.png"
-      href={"https://linkedin.com/vincentdais"}
-      rel="noopener noreferrer"
-      target="_blank"
-    /> */}
-    {/* <ImageLink
-      imgurl="./linkedin.svg"
-      href={"https://linkedin.com/vincentdais"}
-      rel="noopener noreferrer"
-      target="_blank"
-    />
-    <ImageLink
-      imgurl="./github.svg"
-      alt={"github"}
-      href={"https://github.com/kentlogic"}
-      rel="noopener noreferrer"
-      target="_blank"
-    />
-    <ImageLink
-      imgurl="./messenger.svg"
-      href={"https://messenger.com/kent.logic"}
-      rel="noopener noreferrer"
-      target="_blank"
-    /> */}
+    <FooterIcons>
+      <img src="./linkedin32.png" alt="" />
+      <img src="./mail32.png" alt="" />
+      <img src="./github32.png" alt="" />
+    </FooterIcons>
+    <FooterNote>
+      I want to use Nana, Matches: 1244, Win Rate: 76%. I want to use Nana,
+      Matches: 1244, Win Rate: 76%.
+    </FooterNote>
   </FooterContainer>
 );
 

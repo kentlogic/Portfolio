@@ -2,36 +2,73 @@ import styled from "styled-components";
 import { device } from "../../utils/media-queries.util";
 
 export const Container = styled.div`
-  background: yellow;
-  overflow: auto;
+  display: flex;
+  justify-content: center;
+  height: auto;
+  align-items: center;
+  padding: 0.5em;
+
+  @media ${device.custom} {
+    flex-direction: column;
+    background: red;
+  }
+
+  @media ${device.mobile} {
+    flex-direction: column;
+    background: red;
+  }
+
+  @media ${device.tablet} {
+    background: #222;
+  }
+`;
+
+export const IntroText = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.5rem;
+  padding: 3rem;
+  color: #fff;
+`;
+
+export const ProjContainer = styled.div`
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(130, 138, 145, 0.5);
+  border-radius: 4px;
+  height: auto;
   align-items: center;
 
-  @media ${device.mobileS} {
-    justify-content: center;
+  & h2 {
+    text-align: left;
+    margin: 1rem;
+  }
+
+  @media ${device.custom} {
     flex-direction: column;
+    background: blue;
   }
+`;
 
-  @media ${device.mobileM} {
-    justify-content: center;
+export const ProjHeader = styled.div`
+  font-size: 1em;
+`;
+
+export const ProjBody = styled.div`
+  display: flex;
+
+  @media ${device.custom} {
     flex-direction: column;
+    background: blue;
   }
 
-  @media ${device.mobileL} {
-    justify-content: center;
+  @media ${device.mobile} {
     flex-direction: column;
+    background: blue;
   }
 
-  @media ${device.laptop} {
-    display: flex;
-
-    justify-content: center;
-    flex-direction: row;
-  }
-
-  @media ${device.laptopL} {
-    display: flex;
-
-    justify-content: center;
+  @media ${device.tablet} {
+    background: #222;
     flex-direction: row;
   }
 `;

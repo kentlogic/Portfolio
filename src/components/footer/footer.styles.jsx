@@ -1,76 +1,24 @@
 import styled from "styled-components";
-import { device } from "../../utils/media-queries.util";
+// import { device } from "../../utils/media-queries.util";
 
-export const FooterContainer = styled.div`
-  height: 5vh;
-  width: 100%;
+export const FooterContainer = styled.footer`
+  background: #222;
   display: flex;
-  padding: 0.2em;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 1em;
+`;
 
-  & a {
-    color: #fff;
-  }
-
-  @media ${device.custom} {
-    font-size: .5em;
-    background: green;
-  }
-
-  @media ${device.mobile} {
-    font-size: 0.7em;
-    background: yellow;
-  }
-
-  @media ${device.tablet} {
-    font-size: .9em;
-    background: blue;
-  }
-  @media ${device.desktop} {/
-    font-size: 1em;
-    background: red;
-  }
-
-  @media ${device.desktopL} {
-    font-size: 1.2em;
-    background: violet;
+export const FooterIcons = styled.div`
+  & img {
+    padding: 0.5em;
+    max-width: 100%;
   }
 `;
 
-export const FooterNote = styled.h3`
-  color: #fff;
-
-  height: 8vh;
-  width: 100%;
-  display: flex;
-  padding: 0.2em;
-  justify-content: space-between;
-
-  & a {
-    color: #fff;
-  }
-
-  @media ${device.custom} {
-    font-size: .5em;
-    background: green;
-  }
-
-  @media ${device.mobile} {
-    font-size: 0.7em;
-    background: yellow;
-  }
-
-  @media ${device.tablet} {
-    font-size: .9em;
-    background: blue;
-  }
-  @media ${device.desktop} {/
-    font-size: 1em;
-    background: red;
-  }
-
-  @media ${device.desktopL} {
-    font-size: 1.2em;
-    background: violet;
-  }
+export const FooterNote = styled.p`
+  font-size: 1rem;
+  text-align: center;
 `;

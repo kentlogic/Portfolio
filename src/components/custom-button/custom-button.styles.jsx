@@ -1,70 +1,21 @@
-import styled, { css } from "styled-components";
-import { device } from "../../utils/media-queries.util";
+import styled from "styled-components";
+// import { device } from "../../utils/media-queries.util";
 
 export const CustomButtonContainer = styled.button`
   letter-spacing: 0.5px;
-  border-radius: 5px;
-  background-color: black;
-  color: white;
+  border-radius: 4px;
   text-transform: uppercase;
-  // font-family: "Open Sans Condensed";
-  font-weight: bolder;
+  font-weight: bold;
+  padding: 1.5em;
   border: none;
   cursor: pointer;
   display: flex;
   justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(130, 138, 145, 0.5);
 
   &:hover {
+    box-shadow: 0 8px 16px 0 rgba(130, 138, 145, 0.5);
+
     background: #fff;
-    color: #222;
-  }
-
-  @media ${device.mobileS} {
-    background-color: green;
-
-    /* Top Navigation*/
-    font-size: 0.3em;
-    padding: 5px;
-
-    height: auto;
-  }
-
-  @media ${device.mobileM} {
-    background-color: blue;
-    padding: 7px;
-
-    /* Top Navigation*/
-    font-size: 0.5em;
-    height: auto;
-  }
-
-  @media ${device.laptop} {
-    background-color: red;
-    /* Top Navigation*/
-    font-size: 0.8em;
-    padding: 7px;
-    height: auto;
-  }
-
-  @media ${device.laptopL} {
-    background-color: yellow;
-    padding: 10px;
-    /* Top Navigation*/
-    font-size: 1em;
-    height: auto;
-  }
-
-  @media ${device.desktop} {
-    background-color: orange;
-    font-size: 1em;
-    padding: 20px;
-    height: auto;
-  }
-
-  @media ${device.desktopL} {
-    background-color: pink;
-
-    font-size: 0.8em;
-    height: auto;
   }
 `;
