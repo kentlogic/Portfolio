@@ -1,12 +1,11 @@
 import React from "react";
-//import './header.styles.scss'
+import "./header.styles.scss";
 
 import { HeaderContainer, NavItems, NavLink } from "./header.styles";
 
 const Header = () => (
   <HeaderContainer>
     <NavItems>
-      <NavLink to="/">Home</NavLink>
       <NavLink to="/profile">About</NavLink>
       <NavLink to="/projects">Projects</NavLink>
       <NavLink to="/contact">Contact</NavLink>

@@ -19,6 +19,6 @@ export const FooterIcons = styled.div`
 `;
 
 export const FooterNote = styled.p`
-  font-size: 1rem;
+  font-size: 0.7rem;
   text-align: center;
 `;

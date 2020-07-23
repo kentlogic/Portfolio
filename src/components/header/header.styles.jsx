@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
-// import { device } from "../../utils/media-queries.util";
+import { device } from "../../utils/media-queries.util";
 
 export const NavLinkStyles = css`
   padding: 0.5em;
@@ -10,8 +10,17 @@ export const NavLinkStyles = css`
   text-decoration: none;
 
   &:hover {
+    border-bottom: 2px;
     background-color: #fff;
     color: #222;
+  }
+
+  & img {
+    max-height: 20px;
+  }
+
+  & img:hover {
+    background-color: #222;
   }
 `;
 
@@ -26,17 +35,18 @@ export const HeaderContainer = styled.nav`
 `;
 
 export const NavItems = styled.div`
-  font-size: 1.1rem;
-
-  width: 40%;
+  font-size: 1.5em;
+  font-weight: bold;
   height: 100%;
-  display: flex;
-  align-items: center;
-  margin-left: 0px;
-`;
+  margin-right: 1em;
 
-export const NavItemRight = styled.div`
-  margin-left: 0 auto;
+  @media ${device.custom} {
+    font-size: 1em;
+  }
+
+  @media ${device.mobile} {
+    font-size: 1em;
+  }
 `;
 
 export const NavLink = styled(Link)`

@@ -18,12 +18,7 @@ export const Images = styled.div`
   overflow-x: hide;
   display: flex;
   align-items: center;
-  height: 100%;
   box-shadow: 0 4px 8px 0 rgba(130, 138, 145, 0.5);
-
-  & img {
-    margin-right: 15px;
-  }
 `;
 
 export const Controls = styled.div`
