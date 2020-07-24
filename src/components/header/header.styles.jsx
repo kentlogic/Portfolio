@@ -10,7 +10,6 @@ export const NavLinkStyles = css`
   text-decoration: none;
 
   &:hover {
-    border-bottom: 2px;
     background-color: #fff;
     color: #222;
   }
@@ -24,8 +23,24 @@ export const NavLinkStyles = css`
   }
 `;
 
+export const NavImgLinkStyles = css`
+  padding: 0.5em;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  align-self: center;
+  vertical-align: middle;
+  & img {
+    max-height: 1.5em;
+  }
+
+  & img:hover {
+    box-shadow: 4px 4px 4px 0 rgba(130, 138, 145, 0.5);
+  }
+`;
+
 export const HeaderContainer = styled.nav`
   display: flex;
+  align-items: center;
   justify-content: space-between;
   background: #222;
   padding: 1em;
@@ -47,6 +62,10 @@ export const NavItems = styled.div`
   @media ${device.mobile} {
     font-size: 1em;
   }
+`;
+
+export const NavImgLink = styled(Link)`
+  ${NavImgLinkStyles}
 `;
 
 export const NavLink = styled(Link)`

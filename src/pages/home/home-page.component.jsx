@@ -7,9 +7,9 @@ import {
   Subtitle,
   FormContainer,
   Button,
-} from "./contact.styles";
+} from "./home.styles";
 
-const ContactPage = () => {
+const HomePage = () => {
   return (
     <Container>
       <Header>
@@ -29,4 +29,4 @@ const ContactPage = () => {
   );
 };
 
-export default ContactPage;
+export default HomePage;
