@@ -1,39 +1,40 @@
 import React from "react";
-// import "./footer.styles.scss";
 // import ImageLink from "../image-link/image-link.component";
-import { FooterContainer, FooterNote } from "./footer.styles";
-import icon from "./icon.png";
-
-console.log(icon);
+import { FooterContainer, FooterNote, FooterIcons } from "./footer.styles";
+import ImageLink from "../../components/image-link/image-link.component";
 
 const Footer = () => (
   <FooterContainer>
-    <FooterNote>Powered by React</FooterNote>
-    {/* <ImageLink
-      imgurl="./icon.png"
-      href={"https://linkedin.com/vincentdais"}
-      rel="noopener noreferrer"
-      target="_blank"
-    /> */}
-    {/* <ImageLink
-      imgurl="./linkedin.svg"
-      href={"https://linkedin.com/vincentdais"}
-      rel="noopener noreferrer"
-      target="_blank"
-    />
-    <ImageLink
-      imgurl="./github.svg"
-      alt={"github"}
-      href={"https://github.com/kentlogic"}
-      rel="noopener noreferrer"
-      target="_blank"
-    />
-    <ImageLink
-      imgurl="./messenger.svg"
-      href={"https://messenger.com/kent.logic"}
-      rel="noopener noreferrer"
-      target="_blank"
-    /> */}
+    <FooterIcons>
+      <ImageLink
+        width="24"
+        height="24"
+        src={"./images/twitter24_2.svg"}
+        url={"https://twitter.com/kent_logic"}
+      ></ImageLink>{" "}
+      <ImageLink
+        width="24"
+        height="24"
+        src={"./images/discord24.svg"}
+        url={"https://discord.com/kentlogic"}
+      ></ImageLink>
+      <ImageLink
+        width="24"
+        height="24"
+        src={"./images/messenger24.svg"}
+        url={"https://messenger.com/kent.logic"}
+      ></ImageLink>
+      <ImageLink
+        width="24"
+        height="24"
+        src={"./images/linkedin24.svg"}
+        url={"https://linkedin.com/vincentdais"}
+      ></ImageLink>
+    </FooterIcons>
+    <FooterNote>
+      I want to use Nana, Matches: 1244, Win Rate: 76%. I want to use Nana,
+      Matches: 1244, Win Rate: 76%.
+    </FooterNote>
   </FooterContainer>
 );
 

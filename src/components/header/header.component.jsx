@@ -1,12 +1,19 @@
 import React from "react";
-//import './header.styles.scss'
+import "./header.styles.scss";
 
-import { HeaderContainer, NavItems, NavLink } from "./header.styles";
+import {
+  HeaderContainer,
+  NavItems,
+  NavImgLink,
+  NavLink,
+} from "./header.styles";
 
 const Header = () => (
   <HeaderContainer>
     <NavItems>
-      <NavLink to="/">Home</NavLink>
+      <NavImgLink to="/">
+        <img src="./images/name-logo.svg" alt="" />
+      </NavImgLink>
       <NavLink to="/profile">About</NavLink>
       <NavLink to="/projects">Projects</NavLink>
       <NavLink to="/contact">Contact</NavLink>

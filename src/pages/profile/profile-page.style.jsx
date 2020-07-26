@@ -1,32 +1,118 @@
 import styled from "styled-components";
 import { device } from "../../utils/media-queries.util";
 
-export const Container = styled.div`
-  align-items: center;
+export const MainContainer = styled.div`
+  color: #fff;
+  display: flex;
   justify-content: center;
-  display: grid;
-  grid-gap: 20px;
-  width:100%;
-  overflow: hidden;
-
+  align-items: center;
+  padding: 1em;
 
   @media ${device.custom} {
-    font-size: .5em;
-    background: green;
+    flex-direction: column;
   }
 
   @media ${device.mobile} {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
 
   @media ${device.tablet} {
-    grid-template-columns: 1fr;
+    flex-direction: column;
   }
-  @media ${device.desktop} {/
-    grid-template-columns: 1fr 1fr;
+
+  @media ${device.desktop} {
+    flex-direction: column;
   }
 
   @media ${device.desktopL} {
-    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
   }
+`;
+
+export const ContentContainer = styled.div`
+  height: auto;
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  color: #fff;
+  flex-direction: column;
+`;
+
+export const MediaContainer = styled.div`
+  height: auto;
+  padding: 1em;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  & img {
+    max-width: 100%;
+    height: auto;
+  }
+`;
+
+export const HeaderContainer = styled.div`
+  padding: 0.5em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+`;
+
+export const Title = styled.div`
+  font-size: 3em;
+  font-weight: bold;
+`;
+
+export const Subtitle = styled.div`
+  font-size: 1.2em;
+  opacity: 0.7;
+`;
+
+export const BodyContainer = styled.div`
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.9;
+
+  @media ${device.custom} {
+    font-size: 0.8em;
+    width: 80vw;
+  }
+
+  @media ${device.mobile} {
+    font-size: 0.8em;
+    width: 80vw;
+  }
+
+  @media ${device.tablet} {
+    font-size: 0.9em;
+    width: 80vw;
+  }
+
+  @media ${device.desktop} {
+    font-size: 1.1em;
+    width: 80vw;
+  }
+  @media ${device.desktopL} {
+    font-size: 1.1em;
+    width: 30vw;
+  }
+  flex-direction: column;
+  & p {
+    font-size: 1.5em;
+    padding: 0.5em;
+  }
+`;
+
+export const NameIntro = styled.p`
+  color: #1e90ff;
+  font-weight: bold;
+`;
+export const FooterContainer = styled.div`
+  align-items: center;
+  justify-content: center;
+  display: flex;
 `;
