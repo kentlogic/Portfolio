@@ -12,10 +12,11 @@ export const FooterContainer = styled.footer`
 `;
 
 export const FooterIcons = styled.div`
-  & img {
-    padding: 0.5em;
-    max-width: 100%;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5em;
+  max-width: 100%;
 `;
 
 export const FooterNote = styled.p`

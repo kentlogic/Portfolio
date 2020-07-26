@@ -9,6 +9,7 @@ import {
   Title,
   Subtitle,
   BodyContainer,
+  NameIntro,
   FooterContainer,
 } from "./profile-page.style";
 
@@ -17,7 +18,7 @@ class AboutPage extends React.Component {
     return (
       <MainContainer>
         <MediaContainer>
-          <img src="./kentlogic.png" alt="213" />
+          <img src="./images/kentlogic-logo.svg" alt="213" />
         </MediaContainer>
         <ContentContainer>
           <HeaderContainer>
@@ -25,19 +26,16 @@ class AboutPage extends React.Component {
             <Subtitle>IT Support turned software developer</Subtitle>
           </HeaderContainer>
           <BodyContainer>
+            <NameIntro>Hi, I'm Vincent.</NameIntro>
             <p>
-              I started out as a Cloud Security Engineer and was given the
-              opportunity to be the <strong>Android developer</strong> of an
-              internal app.
+              I started out as a Cloud Security Engineer. On my first year, I
+              was fortunate to be chosen as the{" "}
+              <strong>Android developer</strong> of an internal app for our
+              department.
             </p>
             <p>
-              While developing the app, I became more interested insoftware
-              development which eventually became a habit and a passion.
-            </p>
-            <p>
-              Before switching careers, I joined a startup in order to have a
-              feel on how issues are usually addressed by the developers and to
-              pick-up best practices in software development.
+              Building web and mobile apps that help people in their daily life
+              gives me a sense of fullfilment.
             </p>
           </BodyContainer>
           <FooterContainer></FooterContainer>

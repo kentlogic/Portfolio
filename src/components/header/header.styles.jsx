@@ -24,7 +24,7 @@ export const NavLinkStyles = css`
 `;
 
 export const NavImgLinkStyles = css`
-  padding: 0.5em;
+  padding: 0.3em;
   transition: all 0.3s linear;
   cursor: pointer;
   align-self: center;
@@ -56,7 +56,7 @@ export const NavItems = styled.div`
   margin-right: 1em;
 
   @media ${device.custom} {
-    font-size: 1em;
+    font-size: 0.9em;
   }
 
   @media ${device.mobile} {

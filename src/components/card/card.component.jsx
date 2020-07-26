@@ -10,7 +10,7 @@ import {
   CardFooter,
 } from "./card.style";
 
-const Card = ({ imgUrl, title, subtitle, body, footer }) => (
+const Card = ({ imgUrl, title, subtitle, body, children }) => (
   <CardContainer>
     <CardMedia>{<img src={imgUrl} alt="ing" />}</CardMedia>
     <CardHeader>
@@ -18,7 +18,7 @@ const Card = ({ imgUrl, title, subtitle, body, footer }) => (
       <CardSubtitle>{subtitle}</CardSubtitle>
     </CardHeader>
     <CardBody>{body}</CardBody>
-    <CardFooter>{footer}</CardFooter>
+    <CardFooter>{children}</CardFooter>
   </CardContainer>
 );
 

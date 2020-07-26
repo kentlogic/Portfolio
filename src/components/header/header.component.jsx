@@ -12,7 +12,7 @@ const Header = () => (
   <HeaderContainer>
     <NavItems>
       <NavImgLink to="/">
-        <img src="./name-logo.svg" />
+        <img src="./images/name-logo.svg" alt="" />
       </NavImgLink>
       <NavLink to="/profile">About</NavLink>
       <NavLink to="/projects">Projects</NavLink>

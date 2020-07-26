@@ -5,11 +5,13 @@ import {
   Header,
   Title,
   Subtitle,
+  FormIcons,
   FormContainer,
   Button,
   ContactContainer,
   MessageContainer,
 } from "./contact.styles";
+import ImageLink from "../../components/image-link/image-link.component";
 
 const ContactPage = () => {
   return (
@@ -18,8 +20,21 @@ const ContactPage = () => {
         <Title>Get in touch</Title>
         <Subtitle>
           I'm interested in both freelance and job opportunities. If you have
-          questions, feel free to leave a message.
+          questions, message me through the links or use the form below.
         </Subtitle>
+        <FormIcons>
+          {" "}
+          <ImageLink url="http://linkedin.com" src="./images/linkedin24.svg">
+            Linkedin
+          </ImageLink>
+          <ImageLink src="./images/twitter24_2.svg" width="24">
+            Twitter
+          </ImageLink>
+          <ImageLink src="./images/messenger24.svg">Messenger</ImageLink>
+          <ImageLink src="./images/mail24.svg" width="24">
+            Mail
+          </ImageLink>
+        </FormIcons>
       </Header>
       <FormContainer>
         <ContactContainer>

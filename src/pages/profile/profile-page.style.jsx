@@ -19,6 +19,14 @@ export const MainContainer = styled.div`
   @media ${device.tablet} {
     flex-direction: column;
   }
+
+  @media ${device.desktop} {
+    flex-direction: column;
+  }
+
+  @media ${device.desktopL} {
+    flex-direction: row;
+  }
 `;
 
 export const ContentContainer = styled.div`
@@ -46,7 +54,7 @@ export const MediaContainer = styled.div`
 `;
 
 export const HeaderContainer = styled.div`
-  padding: 1.2em;
+  padding: 0.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -54,12 +62,12 @@ export const HeaderContainer = styled.div`
 `;
 
 export const Title = styled.div`
-  font-size: 2.5em;
+  font-size: 3em;
   font-weight: bold;
 `;
 
 export const Subtitle = styled.div`
-  font-size: 1.1em;
+  font-size: 1.2em;
   opacity: 0.7;
 `;
 
@@ -99,6 +107,10 @@ export const BodyContainer = styled.div`
   }
 `;
 
+export const NameIntro = styled.p`
+  color: #1e90ff;
+  font-weight: bold;
+`;
 export const FooterContainer = styled.div`
   align-items: center;
   justify-content: center;

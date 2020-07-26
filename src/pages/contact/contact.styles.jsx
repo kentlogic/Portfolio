@@ -93,6 +93,11 @@ export const FormContainer = styled.div`
     border-bottom: 1px solid #0fa;
   }
 `;
+
+export const FormIcons = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
 export const ContactContainer = styled.div`
   display: flex;
   gap: 0.5em;
