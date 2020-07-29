@@ -1,126 +1,127 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 import { device } from "../../utils/media-queries.util";
 
 export const Container = styled.div`
-  align-items: center;
   height: auto;
-  overflow: auto;
-  padding: 1em;
-  margin-top: 1em;
-  margin-bottom: 3em;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 `;
 
-export const Header = styled.div`
+export const IntroContainer = styled.div`
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+`;
+
+export const NameStyles = css`
   color: #fff;
+  font-family: "Mosk";
+  font-style: normal;
+  src: local("Mosk"), url("../../fonts/Mosk.ttf") format("truetype"); /* Safari, Android, iOS */
 
   @media ${device.custom} {
-    width: 80vw;
+    font-size: 3rem;
   }
 
   @media ${device.mobile} {
-    width: 80vw;
+    font-size: 3rem;
   }
 
   @media ${device.tablet} {
-    width: 80vw;
+    font-size: 3rem;
   }
 
   @media ${device.desktop} {
-    width: 50vw;
+    font-size: 5rem;
   }
+
   @media ${device.desktopL} {
-    width: 50vw;
+    font-size: 5rem;
   }
 `;
 
-export const Title = styled.div`
-  font-size: 2em;
-  line-height: 2rem;
-  font-weight: 600;
+export const NameContainer = styled.div`
+  ${NameStyles};
 `;
 
-export const Subtitle = styled.div`
-  padding-top: 0.5em;
-  padding-bottom: 1em;
-  font-size: 1.2em;
-  line-height: 1.25rem;
+export const ProfStyles = css`
+  font-size: 5rem;
+  font-family: "Think Music";
+  font-style: normal;
+  src: local("Think Music"),
+    url("../../fonts/think_music.ttf") format("truetype"); /* Safari, Android, iOS */
+  color: #1c8bc5;
+  @media ${device.custom} {
+    font-size: 3rem;
+  }
+
+  @media ${device.mobile} {
+    font-size: 3rem;
+  }
+
+  @media ${device.tablet} {
+    font-size: 3rem;
+  }
+
+  @media ${device.desktop} {
+    font-size: 5rem;
+  }
+
+  @media ${device.desktopL} {
+    font-size: 5rem;
+  }
+`;
+
+export const ProfContainer = styled.div`
+  ${ProfStyles}
+`;
+
+export const ProjMainContainer = styled.div`
+  padding: 1rem;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+`;
+
+export const ProjHeader = styled.div`
+  padding-left: 1rem;
+  line-height: 1.25rrem;
   font-weight: 400;
   opacity: 0.6;
-`;
-
-export const FormContainer = styled.div`
-  display: flex;
-  flex-direction: column;
+  color: #fff;
 
   @media ${device.custom} {
-    font-size: 1em;
-    width: 80vw;
+    font-size: 2rem;
   }
 
   @media ${device.mobile} {
-    width: 80vw;
+    font-size: 2rem;
   }
 
   @media ${device.tablet} {
-    width: 80vw;
+    font-size: 2.5rem;
   }
 
   @media ${device.desktop} {
-    font-size: 1.1em;
-    width: 50vw;
+    font-size: 3rem;
   }
+
   @media ${device.desktopL} {
-    font-size: 1.1em;
-    width: 50vw;
-  }
-
-  & input {
-    color: #fff;
-
-    box-sizing: border-box;
-    margin: 8px 0;
-    transition: 0.5s;
-    outline: none;
-    font-size: 1em;
-    padding: 15px 10px;
-    background: #242424;
-    border: 1px solid #ccc;
-  }
-
-  & input:focus {
-    border: 1px solid fff;
-    box-shadow: 0 4px 8px 0 rgba(130, 138, 145, 0.5);
-  }
-
-  & textarea {
-    color: #fff;
-    font-size: 1em;
-    outline: none;
-    height: 200px;
-    margin: 8px 0;
-    padding: 15px 10px;
-    background: #242424;
-    border: 1px solid #ccc;
-  }
-  & textarea:focus {
-    transition: 0.5s;
-    border: 1px solid #fff;
-    box-shadow: 0 4px 8px 0 rgba(130, 138, 145, 0.5);
+    font-size: 3rem;
   }
 `;
 
-export const Button = styled.button`
-  background: #30475e;
-  text-transform: uppercase;
-  font-weight: 500;
-  align-items: center;
-  margin-top: 0.5em;
-  padding: 0.5em;
-  color: #fff;
-  width: 100px;
-  border: #fff 1px solid;
-  text-align: center;
-  outline: none;
+export const ProjListContainer = styled.div`
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-itrems: center;
+  flex-wrap: wrap;
 `;

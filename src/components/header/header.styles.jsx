@@ -3,34 +3,70 @@ import { Link } from "react-router-dom";
 import { device } from "../../utils/media-queries.util";
 
 export const NavLinkStyles = css`
-  padding: 0.5em;
-  transition: all 0.3s linear;
+  padding: 0.3em;
   cursor: pointer;
   border-radius: 2px;
   text-decoration: none;
+  font-weight: bold;
+  margin-right: 1em;
+  color: #fff;
 
+  @media ${device.custom} {
+    font-size: 0.9em;
+  }
+
+  @media ${device.mobile} {
+    font-size: 1em;
+  }
+
+  @media ${device.desktop} {
+    font-size: 1.2em;
+  }
+
+  @media ${device.desktopL} {
+    font-size: 1.5em;
+  }
   &:hover {
     background-color: #fff;
     color: #222;
   }
-
-  & img {
-    max-height: 20px;
-  }
-
-  & img:hover {
-    background-color: #222;
-  }
 `;
 
 export const NavImgLinkStyles = css`
-  padding: 0.3em;
   transition: all 0.3s linear;
   cursor: pointer;
-  align-self: center;
-  vertical-align: middle;
+  display: flex;
+  justify-content: center;
   & img {
-    max-height: 1.5em;
+      height: auto;
+
+ 
+  }
+
+  @media ${device.custom} {
+    & img {
+      max-height:1.5em;
+    }
+
+      @media ${device.mobile} {
+    & img {
+      max-height: 1.5em;
+    }
+
+      @media ${device.tablet} {
+    & img {
+      max-height: 1.5em;
+    }
+
+    @media ${device.desktop} {
+    & img {
+      max-height: 2em;
+    }
+
+    @media ${device.desktopL} {
+    & img {
+      max-height: 2em;
+    }
   }
 
   & img:hover {
@@ -40,28 +76,22 @@ export const NavImgLinkStyles = css`
 
 export const HeaderContainer = styled.nav`
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #222;
   padding: 1em;
-  & a {
-    color: #fff;
-  }
+  justify-content: center;
+  align-items: center;
 `;
 
-export const NavItems = styled.div`
-  font-size: 1.5em;
-  font-weight: bold;
-  height: 100%;
-  margin-right: 1em;
+export const NavIcon = styled.div`
+  max-height: 2em;
+  flex: 1 2 auto;
+`;
 
-  @media ${device.custom} {
-    font-size: 0.9em;
-  }
-
-  @media ${device.mobile} {
-    font-size: 1em;
-  }
+export const NavLinks = styled.div`
+  display: flex;
+  width: auto;
+  align-items: right;
+  flex: 1 2 auto;
+  justify-content: center;
 `;
 
 export const NavImgLink = styled(Link)`

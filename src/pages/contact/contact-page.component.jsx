@@ -24,16 +24,13 @@ const ContactPage = () => {
         </Subtitle>
         <FormIcons>
           {" "}
-          <ImageLink url="http://linkedin.com" src="./images/linkedin24.svg">
-            Linkedin
-          </ImageLink>
-          <ImageLink src="./images/twitter24_2.svg" width="24">
-            Twitter
-          </ImageLink>
-          <ImageLink src="./images/messenger24.svg">Messenger</ImageLink>
-          <ImageLink src="./images/mail24.svg" width="24">
-            Mail
-          </ImageLink>
+          <ImageLink
+            url="http://linkedin.com"
+            src="./images/linkedin24.svg"
+          ></ImageLink>
+          <ImageLink src="./images/twitter24_2.svg" width="24"></ImageLink>
+          <ImageLink src="./images/messenger24.svg"></ImageLink>
+          <ImageLink src="./images/mail24.svg" width="24"></ImageLink>
         </FormIcons>
       </Header>
       <FormContainer>
