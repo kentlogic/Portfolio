@@ -3,6 +3,16 @@
   src: url(../src/fonts/roboto.ttf);
 }
 
+@font-face {
+  font-family: "Segoe UI", sans-serif;
+  src: url(../src/fonts/segoeui.ttf);
+}
+
+@font-face {
+  font-family: "Mosk", sans-serif;
+  src: url(../src/fonts/mosk_bold_700.ttf);
+}
+
 *,
 body {
   font-family: Roboto;

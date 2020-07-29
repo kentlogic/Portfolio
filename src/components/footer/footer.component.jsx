@@ -10,30 +10,30 @@ const Footer = () => (
         width="24"
         height="24"
         src={"./images/twitter24_2.svg"}
-        url={"https://twitter.com/kent_logic"}
+        url={"https://twitter.com/vgdais"}
       ></ImageLink>{" "}
       <ImageLink
         width="24"
         height="24"
         src={"./images/discord24.svg"}
-        url={"https://discord.com/kentlogic"}
+        url={" https://discordapp.com/users/kentlogic#8354"}
       ></ImageLink>
       <ImageLink
         width="24"
         height="24"
         src={"./images/messenger24.svg"}
-        url={"https://messenger.com/kent.logic"}
+        url={"https://www.messenger.com/t/354110892040686"}
       ></ImageLink>
       <ImageLink
         width="24"
         height="24"
         src={"./images/linkedin24.svg"}
-        url={"https://linkedin.com/vincentdais"}
+        url={"https://www.linkedin.com/in/kentlogic/"}
       ></ImageLink>
     </FooterIcons>
     <FooterNote>
-      I want to use Nana, Matches: 1244, Win Rate: 76%. I want to use Nana,
-      Matches: 1244, Win Rate: 76%.
+      Vincent Dais Portfolio &#169; {new Date().getFullYear()} | Created with
+      React{" "}
     </FooterNote>
   </FooterContainer>
 );

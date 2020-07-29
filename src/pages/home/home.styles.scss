@@ -1,93 +1,63 @@
-import .container {
-  align-items: center;
-  height: auto;
-  padding: 1em;
-  margin-top: 3em;
-  margin-bottom: 3em;
-  display: flex;
-  flex-direction: column;
-  color: #fff;
+@font-face {
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  src: local("Ubuntu"), url("../../fonts/mosk_bold_700.ttf") format("truetype"); /* Safari, Android, iOS */
 }
+
+@font-face {
+  font-family: "Mosk";
+  font-style: normal;
+  src: local("Mosk"), url("../../fonts/mosk_bold_700.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+@font-face {
+  font-family: "Think Music";
+  font-style: normal;
+  src: local("Think Music"),
+    url("../../fonts/think_music.ttf") format("truetype"); /* Safari, Android, iOS */
+}
+
+.hello {
+  text-align: left;
+  font-family: "Mosk";
+  color: #fff;
+  font-size: 7rem;
+  font-weight: bold;
+  margin-left: 2em;
+}
+
+.name {
+  margin-left: 2em;
+  font-family: "Mosk";
+  color: #fff;
+  font-size: 7rem;
+}
+
+.blue {
+  font-family: "Think Music";
+  color: #1c8bc5;
+}
+
 .header {
-  width: 50vw;
-}
-.title {
-  font-size: 2rem;
-  line-height: 2rem;
-  font-weight: 600;
-}
-
-.subtitle {
-  padding-top: 0.5em;
-  padding-bottom: 1em;
-  font-size: 1rem;
-  line-height: 1.25rem;
-  font-weight: 400;
-  opacity: 0.6;
+  margin-top: 3em;
+  text-align: center;
+  font-family: "Mosk";
+  color: #fff;
+  font-size: 4rem;
 }
 
-.form-container {
-  width: 50vw;
+.projects {
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projects-container {
   display: flex;
   flex-direction: column;
-
-  & input {
-    box-sizing: border-box;
-    margin: 8px 0;
-    transition: 0.5s;
-    outline: none;
-    font-size: 1em;
-  }
-
-  & input:focus {
-    border: 1px solid fff;
-    box-shadow: 0 4px 8px 0 rgba(130, 138, 145, 0.5);
-  }
-
-  & textarea {
-    font-size: 1em;
-    outline: none;
-    height: 200px;
-    margin: 8px 0;
-  }
-  & textarea:focus {
-    transition: 0.5s;
-    border: 1px solid #fff;
-    box-shadow: 0 4px 8px 0 rgba(130, 138, 145, 0.5);
-  }
-}
-
-.input {
-  padding: 15px 10px;
-  background: #242424;
-  border: 1px solid #ccc;
-  color: #afafaf;
-}
-.btn-primary {
-  background: #30475e;
-  text-transform: uppercase;
-  font-weight: 500;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  margin-top: 0.5em;
-  padding: 0.5em;
-  color: #fff;
-  width: 100px;
-  text-align: center;
 }
-
-//  <div className="container">
-//       <div className="header">
-//         <div className="title">Get in touch</div>
-//         <div className="subtitle">
-//           I'm open for projects. Feel free to leave a message below and I'll get
-//           back to you.
-//         </div>
-//       </div>
-//       <form className="form">
-//         <div className="form-container">
-//           <input className="input" type="text" required placeholder="Name" />
-//           <input className="input" type="email" required placeholder="Email " />
-//           <textarea className="input" required placeholder="Message"></textarea>
-//         </div>
-//       </form>
-//     </div>
