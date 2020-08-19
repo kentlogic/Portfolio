@@ -7,12 +7,11 @@ import {
   Subtitle,
   FormIcons,
   FormContainer,
-  Button,
   ContactContainer,
   MessageContainer,
 } from "./contact.styles";
 import ImageLink from "../../components/image-link/image-link.component";
-
+import CustomButton from "../../components/custom-button/custom-button.component";
 const ContactPage = () => {
   return (
     <Container>
@@ -33,17 +32,19 @@ const ContactPage = () => {
           <ImageLink src="./images/mail24.svg" width="24"></ImageLink>
         </FormIcons>
       </Header>
-      <FormContainer>
-        <ContactContainer>
-          <input type="text" maxlength="30" required placeholder="Name" />
-          <input type="email" maxlength="30" required placeholder="Email " />
-        </ContactContainer>
-        <MessageContainer>
-          <input type="text" maxlength="30" required placeholder="Subject " />
-          <textarea required placeholder="Message"></textarea>
-        </MessageContainer>
-        <Button>Submit</Button>
-      </FormContainer>
+      <form action="">
+        <FormContainer>
+          <ContactContainer>
+            <input type="text" maxLength="30" required placeholder="Name" />
+            <input type="email" maxLength="30" required placeholder="Email " />
+          </ContactContainer>
+          <MessageContainer>
+            <input type="text" maxLength="30" required placeholder="Subject " />
+            <textarea required placeholder="Message"></textarea>
+          </MessageContainer>
+          <CustomButton>Submit</CustomButton>
+        </FormContainer>
+      </form>
     </Container>
   );
 };

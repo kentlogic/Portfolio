@@ -94,8 +94,8 @@ export const ProjHeader = styled.div`
   padding-left: 1rem;
   line-height: 1.25rrem;
   font-weight: 400;
-  opacity: 0.6;
-  color: #fff;
+  opacity: 0.8;
+  color: #ffffff;
 
   @media ${device.custom} {
     font-size: 2rem;
@@ -110,11 +110,11 @@ export const ProjHeader = styled.div`
   }
 
   @media ${device.desktop} {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   @media ${device.desktopL} {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 `;
 

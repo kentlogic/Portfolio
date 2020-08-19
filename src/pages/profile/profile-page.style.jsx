@@ -109,7 +109,7 @@ export const BodyContainer = styled.div`
 
 export const NameIntro = styled.p`
   // color: #1e90ff;
-  color: #1c8bc5;
+  // color: #1c8bc5;
 
   font-weight: bold;
 `;

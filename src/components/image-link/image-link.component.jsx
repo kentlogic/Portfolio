@@ -8,7 +8,6 @@ import {
 
 const ImageLink = ({ url, src, alt, children, ...props }) => (
   <MainContainer>
-    {console.log({ ...props })}
     <LinkContainer href={url} target="_blank">
       <ImageContainer>
         <img src={src} alt={alt} {...props} />

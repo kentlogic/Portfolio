@@ -12,10 +12,12 @@ import {
 
 const Card = ({ imgUrl, title, subtitle, body, children }) => (
   <CardContainer>
-    <CardMedia>{<img src={imgUrl} alt="ing" />}</CardMedia>
+    <CardMedia>{<img src={imgUrl} alt={title} />}</CardMedia>
     <CardHeader>
       <CardTitle>{title}</CardTitle>
-      <CardSubtitle>{subtitle}</CardSubtitle>
+      <CardSubtitle>
+        <span>{subtitle}</span>
+      </CardSubtitle>
     </CardHeader>
     <CardBody>{body}</CardBody>
     <CardFooter>{children}</CardFooter>

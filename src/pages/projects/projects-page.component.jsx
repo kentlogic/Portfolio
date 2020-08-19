@@ -2,36 +2,74 @@ import React from "react";
 import Card from "../../components/card/card.component";
 import { Container, ProjHeader, ProjContainer } from "./projects-page.styles";
 import ImageLink from "../../components/image-link/image-link.component";
-const ProjectsPage = () => (
-  <Container>
-    <ProjHeader>Projects</ProjHeader>
-    <ProjContainer>
-      <Card
-        imgUrl={"./images/Logo.png"}
-        title={"title"}
-        subtitle={"subtitle"}
-        body={
-          "Search for the keywords to learn more about each warning To ignore, add  eslint-disable-next-line to the line before"
-        }
-        footer={""}
-      />
-      <Card
-        imgUrl={"./images/Logo.png"}
-        title={"title"}
-        subtitle={"subtitle"}
-        body={
-          "Search for the keywords to learn more about each warning To ignore, add  eslint-disable-next-line to the line before"
-        }
-      >
-        <ImageLink src={"./images/github24.svg"} url={"https://github.com"}>
-          View Code
-        </ImageLink>
-        <ImageLink src={"./images/discord24.svg"} url={"https://github.com"}>
-          View Live
-        </ImageLink>
-      </Card>
-    </ProjContainer>
-  </Container>
-);
+import { requestProjects } from "../../redux/actions";
+import { connect } from "react-redux";
+import LoadingAnimation from "../../components/loading-animation/loading-animation.component";
 
-export default ProjectsPage;
+const mapStateToProps = (state) => {
+  return {
+    projects: state.requestProjects.projects,
+    isProjPending: state.requestProjects.isProjPending,
+    projError: state.requestProjects.projError,
+  };
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onRequestProjects: () => dispatch(requestProjects()),
+  };
+};
+
+class ProjectsPage extends React.Component {
+  componentDidMount() {
+    this.props.onRequestProjects();
+  }
+  render() {
+    const { isProjPending, projects } = this.props;
+    return isProjPending ? (
+      <LoadingAnimation />
+    ) : (
+      <Container>
+        <ProjHeader>Projects</ProjHeader>
+        <ProjContainer>
+          {projects.map((proj, i) => {
+            let type;
+            switch (projects[i].type) {
+              case 1:
+                type = "Web";
+                break;
+              case 2:
+                type = "Mobile";
+                break;
+            }
+            return (
+              <Card
+                key={i}
+                imgUrl={projects[i].imageurl}
+                title={projects[i].name}
+                subtitle={type}
+                body={projects[i].description}
+                footer={""}
+              >
+                <ImageLink
+                  src={"./images/github24.svg"}
+                  url={projects[i].repourl}
+                >
+                  View Code
+                </ImageLink>
+                <ImageLink
+                  src={"./images/discord24.svg"}
+                  url={projects[i].liveurl}
+                >
+                  View Live
+                </ImageLink>
+              </Card>
+            );
+          })}
+        </ProjContainer>
+      </Container>
+    );
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(ProjectsPage);
