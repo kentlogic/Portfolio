@@ -24,7 +24,7 @@ export const requestProjects = (state = initialState, action = {}) => {
     case REQUEST_PROJECTS_FAILED:
       return Object.assign({}, state, {
         isProjPending: false,
-        error: action.payload,
+        projError: action.payload,
       });
     default:
       return state;

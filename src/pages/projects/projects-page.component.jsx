@@ -25,10 +25,10 @@ class ProjectsPage extends React.Component {
     this.props.onRequestProjects();
   }
   render() {
-    const { isProjPending, projects } = this.props;
+    const { projError, isProjPending, projects } = this.props;
     return isProjPending ? (
       <LoadingAnimation />
-    ) : (
+    ) : !projError ? (
       <Container>
         <ProjHeader>Projects</ProjHeader>
         <ProjContainer>
@@ -40,6 +40,9 @@ class ProjectsPage extends React.Component {
                 break;
               case 2:
                 type = "Mobile";
+                break;
+              default:
+                type = "Others";
                 break;
             }
             return (
@@ -68,6 +71,8 @@ class ProjectsPage extends React.Component {
           })}
         </ProjContainer>
       </Container>
+    ) : (
+      <div>Unable to retrieve Projects.</div>
     );
   }
 }
