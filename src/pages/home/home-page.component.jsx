@@ -1,7 +1,5 @@
 import React from "react";
-// import "./home.styles.scss";
 import Card from "../../components/card/card.component";
-import ImageLink from "../../components/image-link/image-link.component";
 import {
   Container,
   IntroContainer,
@@ -32,17 +30,7 @@ const HomePage = () => {
             body={
               "I usually go with React for the front-end when building projects with Node and PostgreSQL for the backend."
             }
-          >
-            <ImageLink src={"./images/github24.svg"} url={"https://github.com"}>
-              View Code
-            </ImageLink>
-            <ImageLink
-              src={"./images/discord24.svg"}
-              url={"https://github.com"}
-            >
-              View Live
-            </ImageLink>
-          </Card>
+          ></Card>
           <Card
             imgUrl={"./images/mobile.jpeg"}
             title={"Android Development"}
@@ -50,17 +38,7 @@ const HomePage = () => {
             body={
               "I started with Java for Android development but later switched to Kotlin. For API calls, I use retrofit and glide for images."
             }
-          >
-            <ImageLink src={"./images/github24.svg"} url={"https://github.com"}>
-              View Code
-            </ImageLink>
-            <ImageLink
-              src={"./images/discord24.svg"}
-              url={"https://github.com"}
-            >
-              View Live
-            </ImageLink>
-          </Card>
+          ></Card>
         </ProjListContainer>
       </ProjMainContainer>
     </Container>

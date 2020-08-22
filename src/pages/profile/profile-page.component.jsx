@@ -22,12 +22,10 @@ class AboutPage extends React.Component {
 
   componentDidMount() {
     this.setState({ isLoaded: true });
-    console.log("this should be true: ", this.state.isLoaded);
   }
 
   render() {
     const { isLoaded } = this.props;
-    console.log("this should be true: ", this.props.isLoaded);
     return !isLoaded ? (
       <MainContainer>
         <MediaContainer>

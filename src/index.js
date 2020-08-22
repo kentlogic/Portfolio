@@ -5,24 +5,16 @@ import App from "./container/App";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
-import { createStore, applyMiddleware, combineReducers } from "redux";
-import { createLogger } from "redux-logger";
-import thunkMiddleware from "redux-thunk";
-import { requestProjects } from "./redux/reducers";
-const logger = createLogger();
 
-const rootReducer = combineReducers({ requestProjects });
-const store = createStore(
-  rootReducer,
-  applyMiddleware(thunkMiddleware, logger)
-);
+import { store } from "./redux/store";
 
 ReactDOM.render(
-  <BrowserRouter>
-    <Provider store={store}>
+  <Provider store={store}>
+    <BrowserRouter>
       <App />
-    </Provider>
-  </BrowserRouter>,
+    </BrowserRouter>
+  </Provider>,
+
   document.getElementById("root")
 );
 

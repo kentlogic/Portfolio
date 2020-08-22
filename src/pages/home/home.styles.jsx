@@ -9,6 +9,19 @@ export const Container = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  animation: 1s ease-in 0s 1 fadein;
+
+  @keyframes fadein {
+    from {
+      bottom: 0;
+      opacity: 0;
+    }
+    to {
+      bottom: 30px;
+      opacity: 1;
+    }
+  }
 `;
 
 export const IntroContainer = styled.div`

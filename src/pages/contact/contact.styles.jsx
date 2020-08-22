@@ -10,6 +10,18 @@ export const Container = styled.div`
   margin-bottom: 3em;
   display: flex;
   flex-direction: column;
+  animation: 1s ease-in 0s 1 fadein;
+
+  @keyframes fadein {
+    from {
+      bottom: 0;
+      opacity: 0;
+    }
+    to {
+      bottom: 30px;
+      opacity: 1;
+    }
+  }
 `;
 
 export const Header = styled.div`
