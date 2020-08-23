@@ -51,7 +51,7 @@ export const Header = styled.div`
 
 export const Title = styled.div`
   font-size: 2em;
-  line-height: 2rem;
+  // line-height: 2rem;
   font-weight: 600;
 `;
 
@@ -98,13 +98,12 @@ export const FormContainer = styled.div`
     font-size: 0.9em;
     padding: 15px 10px;
     background: #fff;
-    border: none;
+    border: 1px solid #c2c2c2;
     border-radius: 4px;
-    box-shadow: 0 4px 10px #c2c2c2;
   }
 
   & input:focus {
-    box-shadow: 0 4px 15px #c2c2c2;
+    border: 1px solid #1c8bc5;
   }
 `;
 
@@ -134,13 +133,12 @@ export const MessageContainer = styled.div`
     margin: 8px 0;
     padding: 15px 10px;
     background: #fff;
-    border: none;
+    border: 1px solid #c2c2c2;
     border-radius: 4px;
-    box-shadow: 0 4px 10px #c2c2c2;
   }
   & textarea:focus {
     transition: 0.5s;
-    box-shadow: 0 4px 15px #c2c2c2;
+    border: 1px solid #1c8bc5;
   }
 `;
 

@@ -40,7 +40,6 @@ export const NavImgLinkStyles = css`
 
   & img {
       border-radius: 2px;
-      box-shadow: 0 4px 10px #070509;
       height: auto;
   }
 
