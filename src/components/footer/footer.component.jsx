@@ -32,8 +32,7 @@ const Footer = () => (
       ></ImageLink>
     </FooterIcons>
     <FooterNote>
-      Vincent Dais Portfolio &#169; {new Date().getFullYear()} | Created with
-      React{" "}
+      Vincent Dais Portfolio | &#169; {new Date().getFullYear()}
     </FooterNote>
   </FooterContainer>
 );

@@ -8,6 +8,8 @@ export const NameContainer = styled.div`
   justify-content: center;
   align-items: center;
   border: 2px solid #fff;
+  box-shadow: 0 4px 80px #070509;
+  border: #222 solid 1px;
 `;
 
 export const FirstName = styled.div`
