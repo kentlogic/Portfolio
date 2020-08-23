@@ -2,12 +2,12 @@ import styled from "styled-components";
 // import { device } from "../../utils/media-queries.util";
 
 export const FooterContainer = styled.footer`
-  background: #222;
+  background: #fff;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: #222;
   padding: 1em;
 `;
 

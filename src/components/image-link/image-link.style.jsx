@@ -5,7 +5,7 @@ export const MainContainer = styled.div`
   transition: 1s;
 
   & :hover {
-    background: #121212;
+    background: #1e90ff;
     border-radius: 7px;
     color: #fff;
   }
@@ -19,7 +19,7 @@ export const LinkContainer = styled.a`
   text-decoration: none;
   font-size: 1em;
   padding: 0.5em;
-  color: #e0e0e0;
+  color: #313131;
 
   & :hover {
     background: none;

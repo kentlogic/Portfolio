@@ -46,14 +46,14 @@ export const ContentContainer = styled.div`
   display: flex;
   justify-content: center;
   padding: 1em;
-  color: #fff;
+  color: #212121;
   flex-direction: column;
 `;
 
 export const MediaContainer = styled.div`
   height: auto;
   padding: 1em;
-  color: #fff;
+  color: #212121;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,7 +121,7 @@ export const BodyContainer = styled.div`
 
 export const NameIntro = styled.p`
   // color: #1e90ff;
-  // color: #1c8bc5;
+  color: #1c8bc5;
 
   font-weight: bold;
 `;

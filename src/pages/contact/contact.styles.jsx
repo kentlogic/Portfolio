@@ -25,7 +25,7 @@ export const Container = styled.div`
 `;
 
 export const Header = styled.div`
-  color: #fff;
+  color: #313131;
 
   @media ${device.custom} {
     width: 80vw;
@@ -92,17 +92,19 @@ export const FormContainer = styled.div`
   }
 
   & input {
-    color: #fff;
+    color: #313131;
     margin: 8px 0;
     outline: none;
     font-size: 0.9em;
     padding: 15px 10px;
-    background: #2b2b2b;
+    background: #fff;
     border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px #c2c2c2;
   }
 
   & input:focus {
-    border-bottom: 1px solid #0fa;
+    box-shadow: 0 4px 15px #c2c2c2;
   }
 `;
 
@@ -125,29 +127,31 @@ export const MessageContainer = styled.div`
   flex-direction: column;
 
   & textarea {
-    color: #fff;
+    color: #313131;
     font-size: 0.9em;
     outline: none;
     height: 200px;
     margin: 8px 0;
     padding: 15px 10px;
-    background: #2b2b2b;
+    background: #fff;
     border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px #c2c2c2;
   }
   & textarea:focus {
     transition: 0.5s;
-    border-bottom: 1px solid #0fa;
+    box-shadow: 0 4px 15px #c2c2c2;
   }
 `;
 
 export const Button = styled.button`
-  background: #2b2b2b;
+  background: #fff;
   text-transform: uppercase;
   font-weight: 500;
   align-items: center;
   margin-top: 0.5em;
   padding: 0.7em;
-  color: #fff;
+  color: #313131;
   width: 100px;
   border: none;
   outline: none;

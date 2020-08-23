@@ -18,6 +18,6 @@ body {
   font-family: Roboto;
   margin: 0;
   padding: 0;
-  height: 100%;
+  overflow-x: hidden;
   box-sizing: border-box;
 }
