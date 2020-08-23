@@ -13,7 +13,7 @@ export const AppHeader = styled.div`
 
 export const AppContent = styled.div`
   background: #fff;
-  height: auto;
+  height: 100% auto;
   flex: 1;
 `;
 

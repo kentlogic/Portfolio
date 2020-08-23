@@ -10,15 +10,15 @@ export const CustomButtonContainer = styled.button`
   padding: 0.7em;
   color: #313131;
   width: 100px;
-  border: none;
   outline: none;
   text-align: center;
   outline: none;
   cursor: pointer;
-  box-shadow: 0 4px 8px 0 rgba(130, 138, 145, 0.5);
+  border-radius: 4px;
+  border: 1px solid #c2c2c2;
 
   &:hover {
-    border-bottom: 1px solid #c2c22;
+    border: 1px solid #1c8bc5;
   }
   // letter-spacing: 0.5px;
   // border-radius: 4px;
