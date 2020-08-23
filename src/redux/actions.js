@@ -10,7 +10,7 @@ import {
 
 export const requestProjects = () => (dispatch) => {
   dispatch({ type: REQUEST_PROJECTS_PENDING });
-  fetch("http://localhost:5001/projects/3")
+  fetch("https://kentlogic-api.herokuapp.com/projects/3")
     .then((result) => result.json())
     .then((data) => dispatch({ type: REQUEST_PROJECTS_SUCCESS, payload: data }))
     .catch((error) =>
@@ -21,7 +21,7 @@ export const requestProjects = () => (dispatch) => {
 export const sendMessage = (message) => (dispatch) => {
   if (message) {
     dispatch({ type: SEND_MESSAGE_PENDING });
-    fetch("http://localhost:5001/message", {
+    fetch("https://kentlogic-api.herokuapp.com/message", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
