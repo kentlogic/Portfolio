@@ -1,0 +1,64 @@
+.snackbar-container {
+  background: #3f8bc5 !important;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  color: #fff;
+  font-size: 1.5rem;
+  position: absolute;
+  height: auto;
+  width: auto;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  bottom: 2rem;
+  right: 2rem;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+
+  /* Animations to fade the snackbar in and out */
+  @-webkit-keyframes fadein {
+    from {
+      bottom: 0;
+      opacity: 0;
+    }
+    to {
+      bottom: 30px;
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadein {
+    from {
+      bottom: 0;
+      opacity: 0;
+    }
+    to {
+      bottom: 30px;
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeout {
+    from {
+      bottom: 30px;
+      opacity: 1;
+    }
+    to {
+      bottom: 0;
+      opacity: 0;
+    }
+  }
+
+  @keyframes fadeout {
+    from {
+      bottom: 30px;
+      opacity: 1;
+    }
+    to {
+      bottom: 0;
+      opacity: 0;
+    }
+  }
+}
+
+.hidden {
+}

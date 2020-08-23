@@ -9,6 +9,19 @@ export const Container = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+
+  animation: 1s ease-in 0s 1 fadein;
+
+  @keyframes fadein {
+    from {
+      bottom: 0;
+      opacity: 0;
+    }
+    to {
+      bottom: 30px;
+      opacity: 1;
+    }
+  }
 `;
 
 export const IntroContainer = styled.div`
@@ -94,8 +107,8 @@ export const ProjHeader = styled.div`
   padding-left: 1rem;
   line-height: 1.25rrem;
   font-weight: 400;
-  opacity: 0.6;
-  color: #fff;
+  opacity: 0.8;
+  color: #ffffff;
 
   @media ${device.custom} {
     font-size: 2rem;
@@ -110,11 +123,11 @@ export const ProjHeader = styled.div`
   }
 
   @media ${device.desktop} {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   @media ${device.desktopL} {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 `;
 

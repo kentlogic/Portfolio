@@ -7,11 +7,9 @@ import ContactPage from "../pages/contact/contact-page.component";
 import Footer from "../components/footer/footer.component";
 import { AppContainer, AppHeader, AppContent, AppFooter } from "./app.style";
 import ProjectsPage from "../pages/projects/projects-page.component";
+
 class App extends React.Component {
-  componentDidMount() {
-    console.log("Mounted");
-    console.log("url", process.env.PUBLIC_URL);
-  }
+  componentDidMount() {}
   render() {
     return (
       <AppContainer>

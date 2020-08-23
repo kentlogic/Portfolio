@@ -1,7 +1,5 @@
 import React from "react";
-// import "./home.styles.scss";
 import Card from "../../components/card/card.component";
-import ImageLink from "../../components/image-link/image-link.component";
 import {
   Container,
   IntroContainer,
@@ -23,64 +21,24 @@ const HomePage = () => {
       </IntroContainer>
 
       <ProjMainContainer>
-        <ProjHeader>Latest Works</ProjHeader>
+        <ProjHeader>What I do</ProjHeader>
         <ProjListContainer>
           <Card
-            imgUrl={"./images/Logo.png"}
-            title={"title"}
-            subtitle={"subtitle"}
+            imgUrl={"./images/web.jpeg"}
+            title={"Web Development"}
+            subtitle={"React, Node, Django, PostgreSQL"}
             body={
-              "Search for the keywords to learn more about each warning To ignore, add  eslint-disable-next-line to the line before"
+              "I usually go with React for the front-end when building projects with Node and PostgreSQL for the backend."
             }
-          >
-            <ImageLink src={"./images/github24.svg"} url={"https://github.com"}>
-              View Code
-            </ImageLink>
-            <ImageLink
-              src={"./images/discord24.svg"}
-              url={"https://github.com"}
-            >
-              View Live
-            </ImageLink>
-          </Card>
-
+          ></Card>
           <Card
-            imgUrl={"./images/Logo.png"}
-            title={"title"}
-            subtitle={"subtitle"}
+            imgUrl={"./images/mobile.jpeg"}
+            title={"Android Development"}
+            subtitle={"Kotlin, Retrofit, Jetpack"}
             body={
-              "Search for the keywords to learn more about each warning To ignore, add  eslint-disable-next-line to the line before"
+              "I started with Java for Android development but later switched to Kotlin. For API calls, I use retrofit and glide for images."
             }
-          >
-            <ImageLink src={"./images/github24.svg"} url={"https://github.com"}>
-              View Code
-            </ImageLink>
-            <ImageLink
-              src={"./images/discord24.svg"}
-              url={"https://github.com"}
-            >
-              View Live
-            </ImageLink>
-          </Card>
-
-          <Card
-            imgUrl={"./images/Logo.png"}
-            title={"title"}
-            subtitle={"subtitle"}
-            body={
-              "Search for the keywords to learn more about each warning To ignore, add  eslint-disable-next-line to the line before"
-            }
-          >
-            <ImageLink src={"./images/github24.svg"} url={"https://github.com"}>
-              View Code
-            </ImageLink>
-            <ImageLink
-              src={"./images/discord24.svg"}
-              url={"https://github.com"}
-            >
-              View Live
-            </ImageLink>
-          </Card>
+          ></Card>
         </ProjListContainer>
       </ProjMainContainer>
     </Container>

@@ -1,6 +1,4 @@
 import React from "react";
-// import Card from "../../components/card/card.component";
-// import CustomButton from "../../components/custom-button/custom-button.component";
 import {
   MainContainer,
   ContentContainer,
@@ -12,10 +10,23 @@ import {
   NameIntro,
   FooterContainer,
 } from "./profile-page.style";
+import LoadingAnimation from "../../components/loading-animation/loading-animation.component.jsx";
 
 class AboutPage extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      isLoaded: false,
+    };
+  }
+
+  componentDidMount() {
+    this.setState({ isLoaded: true });
+  }
+
   render() {
-    return (
+    const { isLoaded } = this.props;
+    return !isLoaded ? (
       <MainContainer>
         <MediaContainer>
           <img src="./images/kentlogic-logo.svg" alt="213" />
@@ -41,6 +52,8 @@ class AboutPage extends React.Component {
           <FooterContainer></FooterContainer>
         </ContentContainer>
       </MainContainer>
+    ) : (
+      <LoadingAnimation />
     );
   }
 }

@@ -7,6 +7,18 @@ export const MainContainer = styled.div`
   justify-content: center;
   align-items: center;
   padding: 1em;
+  animation: 1s ease-in 0s 1 fadein;
+
+  @keyframes fadein {
+    from {
+      bottom: 0;
+      opacity: 0;
+    }
+    to {
+      bottom: 30px;
+      opacity: 1;
+    }
+  }
 
   @media ${device.custom} {
     flex-direction: column;
@@ -109,7 +121,7 @@ export const BodyContainer = styled.div`
 
 export const NameIntro = styled.p`
   // color: #1e90ff;
-  color: #1c8bc5;
+  // color: #1c8bc5;
 
   font-weight: bold;
 `;
