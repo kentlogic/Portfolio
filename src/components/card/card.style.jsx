@@ -1,25 +1,34 @@
 import styled, { css } from "styled-components";
-// import { device } from "../../utils/media-queries.util";
+import { device } from "../../utils/media-queries.util";
 
 export const Container = styled.div`
-  background-color: #1e1e1e;
-  max-width: 344px;
-  box-shadow: 0 4px 80px #070509;
+  background-color: #fff;
+  // max-width: 344px;
+  max-width: 17rem;
+  box-shadow: 0 4px 15px #c2c2c2;
 
-  min-width: 344px;
+  // min-width: 344px;
   // box-shadow: 0px 0px 3px #1e1e1e;
   border-radius: 0.5em;
   margin: 1.5rem;
-  color: #222;
+  color: #353535;
   display: flex;
   flex-direction: column;
-  elevation: 50deg;
+  elevation: 90deg;
+
+  @media ${device.mobile} {
+    max-width: 20rem;
+  }
+
+  @media ${device.custom} {
+    max-width: 20rem;
+  }
 `;
 
 export const CardStyles = css`
   &:hover {
-    transition: 0.7s ease;
-    box-shadow: 0px 0px 5px #1e1e1e;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 30px #070509;
   }
 `;
 
@@ -54,12 +63,12 @@ export const CardHeader = styled.div`
 export const CardTitle = styled.div`
   font-size: 1.25rem;
   font-weight: 600;
-  color: #e0e0e0;
+  color: #353535;
   height: auto;
 `;
 
 export const CardSubtitle = styled.div`
-  color: #e0e0e0;
+  color: #353535;
   font-size: 0.9rem;
   font-weight: 400;
   opacity: 0.6;
@@ -71,7 +80,8 @@ export const CardBody = styled.div`
   padding-left: 1.25em;
   font-size: 14px;
   line-height: 1.5em;
-  color: #e0e0e0;
+  color: #353535;
+  //  color: #e0e0e0;
   padding-right: 1.5em;
   padding-bottom: 0.5em;
   box-sizing: border-box;

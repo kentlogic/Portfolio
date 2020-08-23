@@ -16,7 +16,7 @@ export const ProjHeader = styled.div`
   line-height: 1.25rem;
   font-weight: 400;
   opacity: 0.6;
-  color: #fff;
+  color: #313131;
 `;
 
 export const ProjContainer = styled.div`

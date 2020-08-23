@@ -1,8 +1,8 @@
 import styled from "styled-components";
 // import { device } from "../utils/media-queries.util";
 export const AppContainer = styled.div`
-  background: #121212;
   height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
 `;
@@ -12,7 +12,7 @@ export const AppHeader = styled.div`
 `;
 
 export const AppContent = styled.div`
-  background: #121212;
+  background: #fff;
   height: auto;
   flex: 1;
 `;

@@ -8,15 +8,15 @@ export const NavLinkStyles = css`
   border-radius: 2px;
   text-decoration: none;
   font-weight: bold;
-  margin-right: 1em;
+  margin-left: 1em;
   color: #fff;
 
   @media ${device.custom} {
-    font-size: 0.9em;
+    font-size: 0.7em;
   }
 
   @media ${device.mobile} {
-    font-size: 1em;
+    font-size: .7em;
   }
 
   @media ${device.desktop} {
@@ -80,6 +80,7 @@ export const HeaderContainer = styled.nav`
   padding: 1em;
   justify-content: space-around;
   align-items: center;
+  background: #313131;
 `;
 
 export const NavIcon = styled.div`

@@ -60,10 +60,7 @@ class ProjectsPage extends React.Component {
                 >
                   View Code
                 </ImageLink>
-                <ImageLink
-                  src={"./images/discord24.svg"}
-                  url={projects[i].liveurl}
-                >
+                <ImageLink src={"./images/link.svg"} url={projects[i].liveurl}>
                   View Live
                 </ImageLink>
               </Card>

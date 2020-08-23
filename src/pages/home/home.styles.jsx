@@ -32,7 +32,7 @@ export const IntroContainer = styled.div`
 `;
 
 export const NameStyles = css`
-  color: #fff;
+  color: #212121;
   font-family: "Mosk";
   font-style: normal;
   src: local("Mosk"), url("../../fonts/Mosk.ttf") format("truetype"); /* Safari, Android, iOS */
@@ -108,7 +108,7 @@ export const ProjHeader = styled.div`
   line-height: 1.25rrem;
   font-weight: 400;
   opacity: 0.8;
-  color: #ffffff;
+  color: #313131;
 
   @media ${device.custom} {
     font-size: 2rem;
