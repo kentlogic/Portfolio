@@ -24,6 +24,8 @@ export const ProjContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: stretch;
+  align-content: space-between;
   height: auto;
   margin-bottom: 1rem;
+  flex-grow: 4;
 `;

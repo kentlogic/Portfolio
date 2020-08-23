@@ -4,8 +4,10 @@ import styled, { css } from "styled-components";
 export const Container = styled.div`
   background-color: #1e1e1e;
   max-width: 344px;
+  box-shadow: 0 4px 80px #070509;
+
   min-width: 344px;
-  box-shadow: 0px 0px 3px #1e1e1e;
+  // box-shadow: 0px 0px 3px #1e1e1e;
   border-radius: 0.5em;
   margin: 1.5rem;
   color: #222;

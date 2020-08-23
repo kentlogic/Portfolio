@@ -24,7 +24,7 @@ export const NavLinkStyles = css`
   }
 
   @media ${device.desktopL} {
-    font-size: 1.5em;
+    font-size: 1.5em;.
   }
   &:hover {
     background-color: #fff;
@@ -33,14 +33,15 @@ export const NavLinkStyles = css`
 `;
 
 export const NavImgLinkStyles = css`
-  transition: all 0.3s linear;
   cursor: pointer;
   display: flex;
   justify-content: center;
-  & img {
-      height: auto;
 
- 
+
+  & img {
+      border-radius: 2px;
+      box-shadow: 0 4px 10px #070509;
+      height: auto;
   }
 
   @media ${device.custom} {
@@ -70,20 +71,21 @@ export const NavImgLinkStyles = css`
   }
 
   & img:hover {
-    box-shadow: 4px 4px 4px 0 rgba(130, 138, 145, 0.5);
-  }
+    box-shadow: 0 4px 10px #222;
+   }
 `;
 
 export const HeaderContainer = styled.nav`
   display: flex;
   padding: 1em;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 `;
 
 export const NavIcon = styled.div`
   max-height: 2em;
   flex: 1 2 auto;
+  justify-content: center;
 `;
 
 export const NavLinks = styled.div`

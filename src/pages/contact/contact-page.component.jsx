@@ -44,11 +44,11 @@ class ContactPage extends React.Component {
       message: message.value,
     };
     this.props.onSendMessage(body);
-  };
 
-  componentWillUnmount() {
-    this.props.onSendMessage();
-  }
+    setTimeout(() => {
+      this.props.onSendMessage();
+    }, 5000);
+  };
 
   render() {
     const { messagePending, messageResult } = this.props;
