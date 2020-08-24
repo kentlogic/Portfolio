@@ -4,18 +4,19 @@ import styled from "styled-components";
 export const CustomButtonContainer = styled.button`
   background: #c2c22;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: bold;
   align-items: center;
   margin-top: 0.5em;
   padding: 0.7em;
-  color: #313131;
+  color: #fff;
+  background: #1c8bc5;
   width: 100px;
   outline: none;
   text-align: center;
   outline: none;
   cursor: pointer;
   border-radius: 4px;
-  border: 1px solid #c2c2c2;
+  border: 1px solid #1c8bc5;
 
   &:hover {
     border: 1px solid #1c8bc5;

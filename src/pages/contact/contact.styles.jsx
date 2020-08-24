@@ -11,6 +11,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   animation: 1s ease-in 0s 1 fadein;
+  font-family: Roboto;
 
   @keyframes fadein {
     from {
@@ -127,7 +128,7 @@ export const MessageContainer = styled.div`
 
   & textarea {
     color: #313131;
-    font-size: 0.9em;
+    font-size: 1em;
     outline: none;
     height: 200px;
     margin: 8px 0;

@@ -5,11 +5,9 @@ export const Container = styled.div`
   background-color: #fff;
   // max-width: 344px;
   max-width: 17rem;
-  box-shadow: 0 4px 15px #c2c2c2;
-
-  // min-width: 344px;
+  box-shadow: 0 5px 25px -10px #c2c2c2;
   // box-shadow: 0px 0px 3px #1e1e1e;
-  border-radius: 0.5em;
+  border-radius: 20px;
   margin: 1.5rem;
   color: #353535;
   display: flex;
@@ -28,7 +26,7 @@ export const Container = styled.div`
 export const CardStyles = css`
   &:hover {
     transition: 0.3s ease;
-    box-shadow: 0 4px 30px #070509;
+    box-shadow: 0 7px 30px -10px #c2c2c2;
   }
 `;
 
@@ -87,7 +85,7 @@ export const CardBody = styled.div`
   box-sizing: border-box;
 `;
 
-export const CardFooter = styled.div`
+export const CardFooter = styled.footer`
   padding: 0.5em;
   display: flex;
   box-sizing: border-box;

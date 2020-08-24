@@ -1,19 +1,14 @@
 @font-face {
   font-family: Roboto;
-  src: url(../src/fonts/roboto.ttf);
+  src: url(./fonts/roboto.ttf);
 }
 
 @font-face {
   font-family: "Segoe UI", sans-serif;
-  src: url(../src/fonts/segoeui.ttf);
+  src: url(./fonts/segoeui.ttf);
 }
 
-@font-face {
-  font-family: "Mosk", sans-serif;
-  src: url(../src/fonts/mosk_bold_700.ttf);
-}
-
-*,
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Kurale&family=Lobster&display=swap");
 body {
   font-family: Roboto;
   margin: 0;

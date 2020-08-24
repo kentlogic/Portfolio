@@ -33,20 +33,18 @@ export const IntroContainer = styled.div`
 
 export const NameStyles = css`
   color: #212121;
-  font-family: "Mosk";
-  font-style: normal;
-  src: local("Mosk"), url("../../fonts/Mosk.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-family: "Kurale", serif;
 
   @media ${device.custom} {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   @media ${device.mobile} {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   @media ${device.tablet} {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   @media ${device.desktop} {
@@ -64,21 +62,19 @@ export const NameContainer = styled.div`
 
 export const ProfStyles = css`
   font-size: 5rem;
-  font-family: "Think Music";
+  font-family: "Lobster", cursive;
   font-style: normal;
-  src: local("Think Music"),
-    url("../../fonts/think_music.ttf") format("truetype"); /* Safari, Android, iOS */
   color: #1c8bc5;
   @media ${device.custom} {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   @media ${device.mobile} {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   @media ${device.tablet} {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   @media ${device.desktop} {
@@ -111,11 +107,11 @@ export const ProjHeader = styled.div`
   color: #313131;
 
   @media ${device.custom} {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   @media ${device.mobile} {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   @media ${device.tablet} {
