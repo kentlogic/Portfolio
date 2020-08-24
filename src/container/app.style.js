@@ -1,8 +1,8 @@
 import styled from "styled-components";
 // import { device } from "../utils/media-queries.util";
 export const AppContainer = styled.div`
-  height: 100vh;
   width: 100vw;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 `;
@@ -17,6 +17,6 @@ export const AppContent = styled.div`
   flex: 1;
 `;
 
-export const AppFooter = styled.div`
+export const AppFooter = styled.footer`
   height: auto;
 `;

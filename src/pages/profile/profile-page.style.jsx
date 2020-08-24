@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { device } from "../../utils/media-queries.util";
 
 export const MainContainer = styled.div`
+  margin-top: 1rem;
   color: #fff;
   display: flex;
   justify-content: center;

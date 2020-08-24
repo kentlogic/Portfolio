@@ -11,7 +11,7 @@ export const FooterContainer = styled.footer`
   padding: 1em;
 `;
 
-export const FooterIcons = styled.div`
+export const FooterIcons = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
