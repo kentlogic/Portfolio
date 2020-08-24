@@ -62,8 +62,8 @@ class ContactPage extends React.Component {
         <Header>
           <Title>Get in touch</Title>
           <Subtitle>
-            I'm interested in both freelance and job opportunities. If you have
-            questions, message me through the links or use the form below.
+            I'm interested in both freelance and job opportunities. You may use
+            the form below.
           </Subtitle>
           <FormIcons>
             <ImageLink

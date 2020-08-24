@@ -111,6 +111,17 @@ export const FormContainer = styled.div`
 export const FormIcons = styled.div`
   display: flex;
   flex-wrap: wrap;
+
+  @media ${device.desktop} {
+    display: none;
+  }
+
+  @media ${device.desktopL} {
+    display: none;
+  }
+  @media ${device.tablet} {
+    display: none;
+  }
 `;
 export const ContactContainer = styled.div`
   display: flex;
