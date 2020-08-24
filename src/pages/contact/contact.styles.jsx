@@ -138,8 +138,10 @@ export const MessageContainer = styled.div`
   flex-direction: column;
 
   & textarea {
+    font-family: Roboto;
+
     color: #313131;
-    font-size: 1em;
+    font-size: 0.9em;
     outline: none;
     height: 200px;
     margin: 8px 0;
