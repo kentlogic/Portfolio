@@ -7,6 +7,8 @@ import ContactPage from "../pages/contact/contact-page.component";
 import Footer from "../components/footer/footer.component";
 import { AppContainer, AppHeader, AppContent, AppFooter } from "./app.style";
 import ProjectsPage from "../pages/projects/projects-page.component";
+import PolicyPage from "../pages/policy/policy-page";
+import TermsPage from "../pages/terms/terms-page";
 
 class App extends React.Component {
   componentDidMount() {}
@@ -22,6 +24,9 @@ class App extends React.Component {
             <Route exact path="/profile" component={ProfilePage} />
             <Route exact path="/projects" component={ProjectsPage} />
             <Route exact path="/contact" component={ContactPage} />
+            <Route exact path="/policy" component={PolicyPage} />
+            <Route exact path="/terms" component={TermsPage} />
+            <Route path="/" component={HomePage} />
           </Switch>
         </AppContent>
         <AppFooter>
