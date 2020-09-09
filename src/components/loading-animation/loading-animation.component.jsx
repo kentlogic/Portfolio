@@ -6,7 +6,7 @@ const LoadingAnimation = () => {
     <div className="container">
       <button className="spinner-grow"></button>
       <br />
-      <h1 className="display-5">Omachikudasai...</h1>
+      <h1 className="display-5">Please wait...</h1>
     </div>
   );
 };
