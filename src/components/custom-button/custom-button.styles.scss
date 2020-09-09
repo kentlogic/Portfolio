@@ -21,6 +21,7 @@
       font-size: 0.3em;
       margin: 0;
       height: 20px;
+      transition: transform 0.2s;
     }
   }
 
@@ -28,6 +29,7 @@
     background-color: white;
     color: black;
     border: 1px solid black;
+    transform: scale(1.25);
   }
 
   &.about-me {
@@ -36,7 +38,8 @@
     border-radius: 10px;
 
     &:hover {
-      background-color: #357ae8;
+      //background-color: #357ae8;
+
       border: none;
     }
   }

@@ -2,12 +2,11 @@ import styled from "styled-components";
 // import { device } from "../../utils/media-queries.util";
 
 export const MainContainer = styled.div`
-  transition: 1s;
+  transition: transform 0.2s;
 
   & :hover {
-    background: #1e90ff;
+    //background: #1e90ff;
     border-radius: 7px;
-    color: #fff;
   }
 `;
 
@@ -22,6 +21,7 @@ export const LinkContainer = styled.a`
   color: #313131;
 
   & :hover {
+    color: #1e90ff;
     background: none;
   }
 `;
@@ -29,6 +29,8 @@ export const LinkContainer = styled.a`
 
 export const ImageContainer = styled.div`
 & :hover {
+      transform: scale(1.25);
+
     background: none;`;
 
 export const TextContainer = styled.div`
